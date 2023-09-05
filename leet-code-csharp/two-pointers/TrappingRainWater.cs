@@ -1,4 +1,14 @@
-﻿namespace leet_code_csharp.two_pointers;
+﻿/*
+ * 42
+ * Trapping Rain Water
+ * 
+ * Given n non-negative integers representing an elevation map where the width of each bar is 1,
+ * compute how much water it can trap after raining.
+ * 
+ * https://leetcode.com/problems/trapping-rain-water/
+ */
+
+namespace leet_code_csharp.two_pointers;
 
 public class TrappingRainWater
 {

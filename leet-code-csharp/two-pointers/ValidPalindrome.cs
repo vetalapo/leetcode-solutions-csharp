@@ -1,4 +1,17 @@
-﻿namespace leet_code_csharp.two_pointers;
+﻿/*
+ * 125 
+ * Valid Palindrome
+ * 
+ * A phrase is a palindrome if,
+ * after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters,
+ * it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+ * 
+ * Given a string s, return true if it is a palindrome, or false otherwise.
+ * 
+ * https://leetcode.com/problems/valid-palindrome/
+ */
+
+namespace leet_code_csharp.two_pointers;
 
 public class ValidPalindrome
 {

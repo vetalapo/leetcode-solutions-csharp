@@ -1,36 +1,47 @@
-﻿namespace leet_code_csharp.arrays_and_hashing
+﻿/*
+ * 49
+ * Group Anagrams
+ * 
+ * Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+ * 
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+ * typically using all the original letters exactly once. 
+ * 
+ * https://leetcode.com/problems/group-anagrams/
+ */
+
+namespace leet_code_csharp.arrays_and_hashing;
+
+public class GroupAnagramsSolution
 {
-    public class GroupAnagramsSolution
+    public IList<IList<string>> GroupAnagrams( string[] strs )
     {
-        public IList<IList<string>> GroupAnagrams( string[] strs )
+        Dictionary<string, IList<string>> groups = new();
+
+        foreach ( string str in strs )
         {
-            Dictionary<string, IList<string>> groups = new();
+            string key = GetHashKey( str );
 
-            foreach ( string str in strs )
+            if ( !groups.ContainsKey( key ) )
             {
-                string key = GetHashKey( str );
-
-                if ( !groups.ContainsKey( key ) )
-                {
-                    groups[key] = new List<string>();
-                }
-
-                groups[key].Add( str );
+                groups[key] = new List<string>();
             }
 
-            return groups.Values.ToList();
+            groups[key].Add( str );
         }
 
-        private string GetHashKey( string str )
+        return groups.Values.ToList();
+    }
+
+    private string GetHashKey( string str )
+    {
+        char[] hash = new char[26];
+
+        foreach ( char c in str )
         {
-            char[] hash = new char[26];
-
-            foreach ( char c in str )
-            {
-                hash[c - 'a']++;
-            }
-
-            return new string( hash );
+            hash[c - 'a']++;
         }
+
+        return new string( hash );
     }
 }

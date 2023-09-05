@@ -1,4 +1,17 @@
-﻿namespace leet_code_csharp.binary_search;
+﻿/*
+ * 704
+ * Binary Search
+ * 
+ * Given an array of integers nums which is sorted in ascending order,
+ * and an integer target, write a function to search target in nums.
+ * If target exists, then return its index. Otherwise, return -1.
+ * 
+ * You must write an algorithm with O(log n) runtime complexity.
+ * 
+ * https://leetcode.com/problems/binary-search/
+ */
+
+namespace leet_code_csharp.binary_search;
 
 public class BinarySearchSolution
 {
