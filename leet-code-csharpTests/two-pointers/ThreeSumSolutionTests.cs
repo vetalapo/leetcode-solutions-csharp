@@ -7,7 +7,7 @@ namespace leet_code_csharp.two_pointers.Tests;
 [TestFixture]
 public class ThreeSumSolutionTests
 {
-    [TestCaseSource( typeof( ThreeSumSolutionTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public IList<IList<int>> ThreeSumTest( int[] nums ) => new ThreeSumSolution().ThreeSum( nums );
 
     private static IEnumerable TestCases

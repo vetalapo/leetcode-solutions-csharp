@@ -7,10 +7,10 @@ namespace leet_code_csharp.arrays_and_hashing.Tests;
 [TestFixture]
 public class ProductOfArrayExceptSelfTests
 {
-    [TestCaseSource( typeof( ProductOfArrayExceptSelfTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public int[] ProductExceptSelfTest( int[] nums ) => new ProductOfArrayExceptSelf().ProductExceptSelf( nums );
 
-    [TestCaseSource( typeof( ProductOfArrayExceptSelfTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public int[] ProductExceptSelfCombinationTest( int[] nums ) => new ProductOfArrayExceptSelf().ProductExceptSelfCombination( nums );
 
     private static IEnumerable TestCases

@@ -7,7 +7,7 @@ namespace leet_code_csharp.arrays_and_hashing.Tests;
 [TestFixture]
 public class GroupAnagramsSolutionTests
 {
-    [TestCaseSource( typeof( GroupAnagramsSolutionTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public IList<IList<string>> GroupAnagramsTest( string[] strs )
     {
         // Arrange

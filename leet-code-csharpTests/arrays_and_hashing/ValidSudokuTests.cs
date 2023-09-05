@@ -7,7 +7,7 @@ namespace leet_code_csharp.arrays_and_hashing.Tests;
 [TestFixture]
 public class ValidSudokuTests
 {
-    [TestCaseSource( typeof( ValidSudokuTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public bool IsValidSudokuTest( char[][] board ) => new ValidSudoku().IsValidSudoku( board );
 
     private static IEnumerable TestCases

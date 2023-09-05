@@ -7,10 +7,10 @@ namespace leet_code_csharp.stack.Tests;
 [TestFixture]
 public class LargestRectangleInHistogramTests
 {
-    [TestCaseSource( typeof( LargestRectangleInHistogramTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public int LargestRectangleAreaTest( int[] heights ) => new LargestRectangleInHistogram().LargestRectangleArea( heights );
 
-    [TestCaseSource( typeof( LargestRectangleInHistogramTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public int LargestRectangleAreaOneLoopTest( int[] heights ) => new LargestRectangleInHistogram().LargestRectangleAreaOneLoop( heights );
 
     private static IEnumerable TestCases

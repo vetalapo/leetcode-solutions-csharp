@@ -7,10 +7,10 @@ namespace leet_code_csharp.arrays_and_hashing.Tests;
 [TestFixture]
 public class ValidAnagramTests
 {
-    [TestCaseSource( typeof( ValidAnagramTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public bool IsAnagramTest( string s, string t ) => new ValidAnagram().IsAnagram( s, t );
 
-    [TestCaseSource( typeof( ValidAnagramTests ), nameof( TestCases ) )]
+    [TestCaseSource( nameof( TestCases ) )]
     public bool IsAnagramBySortingTest( string s, string t ) => new ValidAnagram().IsAnagramBySorting( s, t );
 
     private static IEnumerable TestCases
