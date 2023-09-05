@@ -1,4 +1,15 @@
-﻿using System.Text;
+﻿/*
+ * Given an integer n, return a string array answer(1-indexed) where:
+ *   answer[i] == "FizzBuzz" if i is divisible by 3 and 5.
+ *   answer[i] == "Fizz" if i is divisible by 3.
+ *   answer[i] == "Buzz" if i is divisible by 5.
+ *   answer[i] == i(as a string) if none of the above conditions are true.
+ *
+ * https://leetcode.com/problems/fizz-buzz/
+ *
+ */
+
+using System.Text;
 
 namespace leet_code_csharp.math;
 
@@ -44,13 +55,78 @@ public class FizzBuzzSolution
             {
                 result.Add( "FizzBuzz" );
             }
+            else if ( isDivisibleBy3 )
+            {
+                result.Add( "Fizz" );
+            }
             else if ( isDivisibleBy5 )
             {
                 result.Add( "Buzz" );
             }
+            else
+            {
+                result.Add( i.ToString() );
+            }
+        }
+
+        return result;
+    }
+
+    public IList<string> FizzBuzzBooleansBackedByArray( int n )
+    {
+        string[] result = new string[n];
+
+        for ( int i = 0; i < n; i++ )
+        {
+            int number = i + 1;
+            bool isDivisibleBy3 = number % 3 == 0;
+            bool isDivisibleBy5 = number % 5 == 0;
+
+            if ( isDivisibleBy3 && isDivisibleBy5 )
+            {
+                result[i] = "FizzBuzz";
+            }
             else if ( isDivisibleBy3 )
             {
-                result.Add( "Fizz" );
+                result[i] = "Fizz";
+            }
+            else if ( isDivisibleBy5 )
+            {
+                result[i] = "Buzz";
+            }
+            else
+            {
+                result[i] = number.ToString();
+            }
+        }
+
+        return result;
+    }
+
+    public IList<string> FizzBuzzBooleansAndPreallocatedStrings( int n )
+    {
+        List<string> result = new();
+
+        string fizzBuzz = "FizzBuzz";
+        string fizz = "Fizz";
+        string buzz = "Buzz";
+
+        for ( int i = 1; i <= n; i++ )
+        {
+            bool isDivisibleBy3 = i % 3 == 0;
+            bool isDivisibleBy5 = i % 5 == 0;
+
+            if ( isDivisibleBy3 && isDivisibleBy5 )
+            {
+                result.Add( fizzBuzz );
+            }
+            else if ( isDivisibleBy3 )
+            {
+                result.Add( fizz );
+            }
+            else if ( isDivisibleBy5 )
+            {
+                result.Add( buzz );
             }
             else
             {

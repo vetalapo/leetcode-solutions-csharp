@@ -14,6 +14,12 @@ public class FizzBuzzSolutionTests
     public IList<string> FizzBuzzBooleansTest( int n ) => new FizzBuzzSolution().FizzBuzzBooleans( n );
 
     [TestCaseSource( nameof( TestCases ) )]
+    public IList<string> FizzBuzzBooleansBackedByArrayTest( int n ) => new FizzBuzzSolution().FizzBuzzBooleansBackedByArray( n );
+
+    [TestCaseSource( nameof( TestCases ) )]
+    public IList<string> FizzBuzzBooleansAndPreallocatedStringsTest( int n ) => new FizzBuzzSolution().FizzBuzzBooleansAndPreallocatedStrings( n );
+
+    [TestCaseSource( nameof( TestCases ) )]
     public IList<string> FizzBuzzStringConcatenationTest( int n ) => new FizzBuzzSolution().FizzBuzzStringConcatenation( n );
 
     [TestCaseSource( nameof( TestCases ) )]

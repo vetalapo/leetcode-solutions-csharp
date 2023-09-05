@@ -16,6 +16,12 @@ public class FizzBuzzBenchmarks
 
     [Benchmark]
     public void FizzBuzzBooleans() => FizzBussSolution.FizzBuzzBooleans( IterationNumber );
+    
+    [Benchmark]
+    public void FizzBuzzBooleansBackedByArray() => FizzBussSolution.FizzBuzzBooleansBackedByArray( IterationNumber );
+
+    [Benchmark]
+    public void FizzBuzzBooleansAndPreallocatedStrings() => FizzBussSolution.FizzBuzzBooleansAndPreallocatedStrings( IterationNumber );
 
     [Benchmark]
     public void FizzBuzzStringConcatenation() => FizzBussSolution.FizzBuzzStringConcatenation( IterationNumber );
