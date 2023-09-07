@@ -37,7 +37,7 @@ public class SearchInRotatedSortedArray
             {
                 return middle;
             }
-            if ( nums[left] <= nums[middle] )
+            else if ( nums[left] <= nums[middle] ) // left sorted portion
             {
                 if ( target < nums[left] || target > nums[middle] )
                 {
