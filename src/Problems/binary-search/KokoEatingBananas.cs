@@ -1,7 +1,7 @@
-﻿/*
+﻿/**
  * 875
  * Koko Eating Bananas
- * 
+ **
  * Koko loves to eat bananas.
  * There are n piles of bananas, the ith pile has piles[i] bananas. The guards have gone and will come back in h hours.
  * 
