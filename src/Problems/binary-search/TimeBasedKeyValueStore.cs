@@ -59,9 +59,9 @@ public class TimeMap
         }
 
         int left = 0;
-        int right = values.Count;
+        int right = values.Count - 1;
 
-        while ( left < right )
+        while ( left <= right )
         {
             int middle = left + ( ( right - left ) / 2 );
 
@@ -73,12 +73,12 @@ public class TimeMap
             }
             else if ( values[middle].timestamp < timestamp )
             {
-                left = middle + 1;
                 result = values[middle].value;
+                left = middle + 1;
             }
             else
             {
-                right = middle;
+                right = middle - 1;
             }
         }
 
