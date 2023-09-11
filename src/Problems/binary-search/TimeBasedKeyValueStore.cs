@@ -51,15 +51,16 @@ public class TimeMap
 
     public string GetBinarySearch( string key, int timestamp )
     {
+        string result = string.Empty;
+        
         if ( !this._store.TryGetValue( key, out List<(int timestamp, string value)>? values ) )
         {
-            return string.Empty;
+            return result;
         }
 
         int left = 0;
         int right = values.Count;
-        string result = string.Empty;
-
+        
         while ( left < right )
         {
             int middle = ( left + right ) / 2;
