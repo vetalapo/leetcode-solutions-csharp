@@ -6,6 +6,6 @@ public class Program
 {
     static void Main()
     {
-        BenchmarkRunner.Run<NumberOfStepsToReduceANumberToZeroBenchmarks>();
+        BenchmarkRunner.Run<LongestSubstringWithoutRepeatingCharactersBenchmarks>();
     }
 }
