@@ -19,6 +19,24 @@ public class LongestRepeatingCharacterReplacement
 {
     public int CharacterReplacement( string s, int k )
     {
-        return 0;
+        int maxLength = 0;
+        int left = 0;
+        int[] charCount = new int[26]; // 0 - A; 25 - Z
+
+        for ( int right = 0; right < s.Length; right++ )
+        {
+            charCount[s[right] - 'A']++;
+
+            while ( ( right - left + 1 ) - charCount.Max() > k )
+            {
+                charCount[s[left] - 'A']--;
+
+                left++;
+            }
+
+            maxLength = Math.Max( maxLength, right - left + 1 );
+        }
+
+        return maxLength;
     }
 }
