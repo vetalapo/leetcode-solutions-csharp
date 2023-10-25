@@ -8,4 +8,47 @@
         this.val = val;
         this.next = next;
     }
+
+    public static ListNode CreateNodes( int[] values )
+    {
+        if ( values.Length == 0 )
+        {
+            return new ListNode();
+        }
+
+        ListNode result = null;
+
+        for ( int i = values.Length - 1; i >= 0; i-- )
+        {
+            result = new ListNode( values[i], result );
+        }
+
+        return result;
+    }
+
+    public static int[] GetValues( ListNode node )
+    {
+        List<int> result = new();
+
+        while ( node != null )
+        {
+            result.Add( node.val );
+
+            node = node.next;
+        }
+
+        return result.ToArray();
+    }
+
+    public override bool Equals( object? obj )
+    {
+        return obj is ListNode node &&
+                 val == node.val &&
+                EqualityComparer<ListNode>.Default.Equals( next, node.next );
+    }
+
+    public override string ToString()
+    {
+        return $"Value: {val}";
+    }
 }

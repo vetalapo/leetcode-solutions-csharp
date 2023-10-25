@@ -8,7 +8,7 @@ namespace Benchmarks;
 [MemoryDiagnoser]
 [Orderer( SummaryOrderPolicy.FastestToSlowest )]
 [RankColumn]
-public class MinimumWindowSubstringBenchmark
+public class MinimumWindowSubstringBenchmarks
 {
     private static readonly MinimumWindowSubstring MinimumWindowSubstring = new();
 

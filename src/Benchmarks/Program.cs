@@ -6,6 +6,6 @@ public class Program
 {
     static void Main()
     {
-        BenchmarkRunner.Run<MinimumWindowSubstringBenchmark>();
+        BenchmarkRunner.Run<ReverseLinkedListBenchmarks>();
     }
 }
