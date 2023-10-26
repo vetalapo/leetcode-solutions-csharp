@@ -11,12 +11,7 @@ public class ReverseLinkedListTests
     public ListNode ReverseListIterativelyTest( ListNode head ) => new ReverseLinkedList().ReverseListIteratively( head );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public ListNode ReverseListTest( ListNode head ) // => new ReverseLinkedList().ReverseList( head );
-    {
-        ListNode result = new ReverseLinkedList().ReverseList( head );
-
-        return result;
-    }
+    public ListNode ReverseListTest( ListNode head ) => new ReverseLinkedList().ReverseList( head );
 
     private static IEnumerable TestCases
     {
