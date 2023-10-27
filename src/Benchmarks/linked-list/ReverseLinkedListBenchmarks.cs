@@ -117,4 +117,7 @@ public class ReverseLinkedListBenchmarks
 
     [Benchmark]
     public void ReverseListIteratively() => ReverseLinkedList.ReverseListIteratively( ListNode.CreateNodes( Input ) );
+
+    [Benchmark]
+    public void ReverseListRightWay() => ReverseLinkedList.ReverseListRightWay( ListNode.CreateNodes( Input ) );
 }

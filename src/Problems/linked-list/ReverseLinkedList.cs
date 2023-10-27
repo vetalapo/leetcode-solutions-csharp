@@ -41,4 +41,21 @@ public class ReverseLinkedList
 
         return ReverseList( head.next, new ListNode( head.val, accumulator ) );
     }
+
+    public ListNode ReverseListRightWay( ListNode head )
+    {
+        ListNode previous = null;
+
+        while ( head is not null )
+        {
+            ListNode temp = head.next;
+            head.next = previous;
+
+            // Updating pointers
+            previous = head;
+            head = temp;
+        }
+
+        return previous;
+    }
 }

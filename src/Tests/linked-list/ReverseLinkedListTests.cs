@@ -13,6 +13,9 @@ public class ReverseLinkedListTests
     [TestCaseSource( nameof( TestCases ) )]
     public ListNode ReverseListTest( ListNode head ) => new ReverseLinkedList().ReverseList( head );
 
+    [TestCaseSource( nameof( TestCases ) )]
+    public ListNode ReverseListRightWayTest( ListNode head ) => new ReverseLinkedList().ReverseListRightWay( head );
+
     private static IEnumerable TestCases
     {
         get
