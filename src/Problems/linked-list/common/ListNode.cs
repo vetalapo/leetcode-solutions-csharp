@@ -1,4 +1,6 @@
-﻿public class ListNode
+﻿using System.Text;
+
+public class ListNode
 {
     public int val;
     public ListNode next;
@@ -49,6 +51,17 @@
 
     public override string ToString()
     {
-        return $"Value: {val}";
+        StringBuilder result = new();
+        ListNode node = new( val, next );
+
+        while ( node != null )
+        {
+            result.Append( $"{node.val} " );
+            node = node.next;
+        }
+
+        result.Remove( result.Length - 1, 1 );
+
+        return result.ToString();
     }
 }
