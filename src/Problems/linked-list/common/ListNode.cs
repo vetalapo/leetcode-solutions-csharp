@@ -13,11 +13,6 @@ public class ListNode
 
     public static ListNode CreateNodes( int[] values )
     {
-        if ( values.Length == 0 )
-        {
-            return new ListNode();
-        }
-
         ListNode result = null;
 
         for ( int i = values.Length - 1; i >= 0; i-- )

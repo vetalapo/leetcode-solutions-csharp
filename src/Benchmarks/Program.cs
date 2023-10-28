@@ -6,6 +6,6 @@ public class Program
 {
     static void Main()
     {
-        BenchmarkRunner.Run<ReverseLinkedListBenchmarks>();
+        BenchmarkRunner.Run<RemoveNthNodeFromEndOfListBenchmarks>();
     }
 }
