@@ -44,7 +44,7 @@
  * | 3           |
  * +-------------+
  * Explanation: Only products 1 and 3 are both low fat and recyclable.
- * 
+ **
  * https://leetcode.com/problems/recyclable-and-low-fat-products/
  */
  

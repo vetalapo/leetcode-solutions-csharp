@@ -30,7 +30,7 @@
  * | Leetcode      | 8000              |
  * | Handbags      | -23000            |
  * +---------------+-------------------+
- *
+ **
  * https://leetcode.com/problems/capital-gainloss/
  */
  
