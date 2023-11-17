@@ -20,11 +20,11 @@ public class ReverseLinkedListTests
     {
         get
         {
-            yield return new TestCaseData( ListNode.CreateNodes( new int[] { 1, 2, 3, 4, 5 } ) )
-                .Returns( ListNode.CreateNodes( new int[] { 5, 4, 3, 2, 1 } ) );
+            yield return new TestCaseData( ListNode.Create( new int[] { 1, 2, 3, 4, 5 } ) )
+                .Returns( ListNode.Create( new int[] { 5, 4, 3, 2, 1 } ) );
 
-            yield return new TestCaseData( ListNode.CreateNodes( new int[] { 1, 2 } ) )
-                .Returns( ListNode.CreateNodes( new int[] { 2, 1 } ) );
+            yield return new TestCaseData( ListNode.Create( new int[] { 1, 2 } ) )
+                .Returns( ListNode.Create( new int[] { 2, 1 } ) );
 
             yield return new TestCaseData( null ).Returns( null );
         }

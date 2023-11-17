@@ -51,8 +51,8 @@ public class RemoveNthNodeFromEndOfListBenchmarks
     };
 
     [Benchmark]
-    public void RemoveNthFromEnd() => RemoveNthNodeFromEndOfList.RemoveNthFromEnd( ListNode.CreateNodes( Input ), 5 );
+    public void RemoveNthFromEnd() => RemoveNthNodeFromEndOfList.RemoveNthFromEnd( ListNode.Create( Input ), 5 );
 
     [Benchmark]
-    public void RemoveNthFromEndProper() => RemoveNthNodeFromEndOfList.RemoveNthFromEndProper( ListNode.CreateNodes( Input ), 5 );
+    public void RemoveNthFromEndProper() => RemoveNthNodeFromEndOfList.RemoveNthFromEndProper( ListNode.Create( Input ), 5 );
 }

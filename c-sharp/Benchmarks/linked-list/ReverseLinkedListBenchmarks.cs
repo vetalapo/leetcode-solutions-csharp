@@ -113,11 +113,11 @@ public class ReverseLinkedListBenchmarks
     };
 
     [Benchmark]
-    public void ReverseList() => ReverseLinkedList.ReverseList( ListNode.CreateNodes( Input ) );
+    public void ReverseList() => ReverseLinkedList.ReverseList( ListNode.Create( Input ) );
 
     [Benchmark]
-    public void ReverseListIteratively() => ReverseLinkedList.ReverseListIteratively( ListNode.CreateNodes( Input ) );
+    public void ReverseListIteratively() => ReverseLinkedList.ReverseListIteratively( ListNode.Create( Input ) );
 
     [Benchmark]
-    public void ReverseListRightWay() => ReverseLinkedList.ReverseListRightWay( ListNode.CreateNodes( Input ) );
+    public void ReverseListRightWay() => ReverseLinkedList.ReverseListRightWay( ListNode.Create( Input ) );
 }

@@ -11,7 +11,7 @@ public class ListNode
         this.next = next;
     }
 
-    public static ListNode CreateNodes( int[] values )
+    public static ListNode Create( int[] values )
     {
         ListNode result = null;
 
