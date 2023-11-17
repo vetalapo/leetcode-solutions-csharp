@@ -1,2 +1,3 @@
-# C-Sharp Solutions for Leetcode.
-Includes tests for every solution. Also for some problems benchmarks included.
+# Leetcode Solutions
+Not complete. Incremental updates ones in a few days.
+Contains some solutions in C#, T-SQL, and C++
