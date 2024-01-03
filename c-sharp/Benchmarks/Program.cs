@@ -6,6 +6,6 @@ public class Program
 {
     static void Main()
     {
-        BenchmarkRunner.Run<RemoveNthNodeFromEndOfListBenchmarks>();
+        BenchmarkRunner.Run<ConcatenationOfArrayBenchmarks>();
     }
 }
