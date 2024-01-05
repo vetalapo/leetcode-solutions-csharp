@@ -19,12 +19,12 @@
  * Write a solution to report the ids and the names of all managers,
  * the number of employees who report directly to them,
  * and the average age of the reports rounded to the nearest integer.
- *
  * Return the result table ordered by employee_id.
  *
  * The result format is in the following example.
+ *
  * Example 1:
- *   Input: 
+ *   Input:
  *   Employees table:
  *   +-------------+---------+------------+-----+
  *   | employee_id | name    | reports_to | age |
