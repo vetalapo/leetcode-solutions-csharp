@@ -1,4 +1,8 @@
-import sys, os
+import sys
+
+# Preventing creation of __pycache__
+sys.dont_write_bytecode = True
+
 import importlib
 import unittest
 import pandas as pd
@@ -33,4 +37,3 @@ class TestDisplayTheFirstThreeRows(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
