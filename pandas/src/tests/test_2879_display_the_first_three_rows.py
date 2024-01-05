@@ -19,21 +19,21 @@ input_data = {
     "salary": [48675, 11096, 33805, 37678, 23793, 40454]
 }
 
-expected_output_data = {
+expected_data = {
     "employee_id": [3, 90, 9],
     "name": ["Bob", "Alice", "Tatiana"],
     "department": ["Operations", "Sales", "Engineering"],
     "salary": [48675, 11096, 33805]
 }
 
-input_data_frame = pd.DataFrame(data = input_data)
-expected_output_data_frame = pd.DataFrame(data = expected_output_data)
+input_df = pd.DataFrame(data = input_data)
+expected_df = pd.DataFrame(data = expected_data)
 
 
 class TestDisplayTheFirstThreeRows(unittest.TestCase):
     def test_selectFirstRows(self):
-        actual_output_data_frame = unit.selectFirstRows(input_data_frame)
-        self.assertTrue(actual_output_data_frame.equals(expected_output_data_frame), "The result should return the first 3 rows")
+        actual_df = unit.selectFirstRows(input_df)
+        self.assertTrue(actual_df.equals(expected_df), "The result should return the first 3 rows")
 
 if __name__ == "__main__":
     unittest.main()
