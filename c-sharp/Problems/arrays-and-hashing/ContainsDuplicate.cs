@@ -48,6 +48,6 @@ public class ContainsDuplicateSolution
 
     public bool ContainsDuplicateAlt( int[] nums )
     {
-        return new HashSet<int>().Count == nums.Length;
+        return new HashSet<int>( nums ).Count != nums.Length;
     }
 }
