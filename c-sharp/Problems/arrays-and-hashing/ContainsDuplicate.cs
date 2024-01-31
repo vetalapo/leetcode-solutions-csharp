@@ -31,16 +31,14 @@ public class ContainsDuplicateSolution
 {
     public bool ContainsDuplicate( int[] nums )
     {
-        HashSet<int> set = new();
+        HashSet<int> set = new( nums.Length );
 
         foreach ( int i in nums )
         {
-            if ( set.Contains( i ) )
+            if ( !set.Add( i ) )
             {
                 return true;
             }
-
-            set.Add( i );
         }
 
         return false;
