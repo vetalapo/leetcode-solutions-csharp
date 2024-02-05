@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class EncodeAndDecodeStringsTests
 {
     [TestCase( new object[] { new string[] { "lint", "code", "love", "you" } }, ExpectedResult = "4#lint4#code4#love3#you" )]

@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class EvaluateReversePolishNotationTests
 {
     [TestCase( new object[] { new string[] { "2", "1", "+", "3", "*" } }, ExpectedResult = 9 )]

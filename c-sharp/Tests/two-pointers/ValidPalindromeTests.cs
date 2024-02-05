@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class ValidPalindromeTests
 {
     [TestCase( "A man, a plan, a canal: Panama", ExpectedResult = true )]

@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class FindMinimumInRotatedSortedArrayTests
 {
     [TestCase( new int[] { 3, 4, 5, 1, 2 }, ExpectedResult = 1 )]

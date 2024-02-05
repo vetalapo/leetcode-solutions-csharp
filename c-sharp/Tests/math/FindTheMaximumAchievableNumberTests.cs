@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class FindTheMaximumAchievableNumberTests
 {
     [TestCase( 4, 1, ExpectedResult = 6 )]

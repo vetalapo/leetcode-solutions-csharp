@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class LongestConsecutiveSequenceTests
 {
     [TestCase(new object[] { new int[] { 100, 4, 200, 1, 3, 2 } }, ExpectedResult = 4 )]

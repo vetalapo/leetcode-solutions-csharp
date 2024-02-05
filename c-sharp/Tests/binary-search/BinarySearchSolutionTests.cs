@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class BinarySearchSolutionTests
 {
     [TestCase( new int[] { -1, 0, 3, 5, 9, 12 }, 9, ExpectedResult = 4 )]

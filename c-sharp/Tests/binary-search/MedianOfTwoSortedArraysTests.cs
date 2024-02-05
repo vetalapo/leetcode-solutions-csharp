@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class MedianOfTwoSortedArraysTests
 {
     [TestCase( new int[] { 1, 3 }, new int[] { 2 }, ExpectedResult = 2.0 )]

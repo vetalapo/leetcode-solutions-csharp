@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class TruncateSentenceSolutionTests
 {
     [TestCase( "Hello how are you Contestant", 4, ExpectedResult = "Hello how are you" )]

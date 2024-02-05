@@ -4,7 +4,6 @@ using NUnit.Framework;
 
 namespace Problems.Tests;
 
-[TestFixture]
 public class CopyListWithRandomPointerTests
 {
     [TestCaseSource( nameof( TestCases ) )]

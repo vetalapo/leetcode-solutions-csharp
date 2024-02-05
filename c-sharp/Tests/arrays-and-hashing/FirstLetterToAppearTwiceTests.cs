@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class FirstLetterToAppearTwiceTests
 {
     [TestCase( "abccbaacz", ExpectedResult = 'c' )]

@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class RansomNoteTests
 {
     [TestCase( "a", "b", ExpectedResult = false )]

@@ -2,8 +2,6 @@
 
 using Problems;
 
-
-[TestFixture]
 public class SubtractProductAndSumDigitsOfIntegerTests
 {
     [TestCase( 234, ExpectedResult = 15 )]

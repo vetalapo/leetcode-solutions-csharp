@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class SmallestEvenMultipleSolutionTests
 {
     [TestCase( 5, ExpectedResult = 10 )]

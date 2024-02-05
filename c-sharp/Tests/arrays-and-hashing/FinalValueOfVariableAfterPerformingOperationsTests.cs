@@ -4,7 +4,6 @@ using NUnit.Framework;
 
 using Problems;
 
-[TestFixture]
 public class FinalValueOfVariableAfterPerformingOperationsTests
 {
     [TestCaseSource( nameof( TestCases ) )]

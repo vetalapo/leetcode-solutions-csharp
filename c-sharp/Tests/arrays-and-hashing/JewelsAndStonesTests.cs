@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class JewelsAndStonesTests
 {
     [TestCase( "aA", "aAAbbbb", ExpectedResult = 3 )]

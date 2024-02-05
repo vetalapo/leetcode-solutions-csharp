@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class ReverseStringSolutionTest
 {
     [TestCase( new char[] { 'h', 'e', 'l', 'l', 'o' }, new char[] { 'o', 'l', 'l', 'e', 'h' } )]

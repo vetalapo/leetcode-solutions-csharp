@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class LongestRepeatingCharacterReplacementTests
 {
     [TestCase( "ABAB", 2, ExpectedResult = 4 )]

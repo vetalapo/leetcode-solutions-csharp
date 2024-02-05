@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class PermutationInStringTests
 {
     [TestCase( "ab", "eidbaooo", ExpectedResult = true )]

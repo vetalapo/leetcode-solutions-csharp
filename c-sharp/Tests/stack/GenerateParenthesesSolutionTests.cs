@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class GenerateParenthesesSolutionTests
 {
     [TestCase( 3, ExpectedResult = new string[] { "((()))", "(()())", "(())()", "()(())", "()()()" } )]

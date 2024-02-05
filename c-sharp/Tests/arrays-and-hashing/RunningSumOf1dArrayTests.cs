@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class RunningSumOf1dArrayTests
 {
     [TestCase( new int[] { 1, 2, 3, 4 }, ExpectedResult = new int[] { 1, 3, 6, 10 } )]

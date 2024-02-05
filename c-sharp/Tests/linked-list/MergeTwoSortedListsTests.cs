@@ -4,7 +4,7 @@ using NUnit.Framework;
 
 using Problems;
 
-[TestFixture]
+
 public class MergeTwoSortedListsTests
 {
     [TestCaseSource( nameof( TestCases ) )]

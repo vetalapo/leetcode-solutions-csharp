@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class SlidingWindowMaximumTests
 {
     [TestCase( new int[] { 1, 3, -1, -3, 5, 3, 6, 7 }, 3, ExpectedResult = new int[] { 3, 3, 5, 5, 6, 7 } )]

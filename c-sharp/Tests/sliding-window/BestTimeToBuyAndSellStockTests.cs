@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class BestTimeToBuyAndSellStockTests
 {
     [TestCase( new int[] { 7, 1, 5, 3, 6, 4 }, ExpectedResult = 5 )]

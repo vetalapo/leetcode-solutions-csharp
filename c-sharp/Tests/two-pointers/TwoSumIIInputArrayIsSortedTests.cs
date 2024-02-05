@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class TwoSumIIInputArrayIsSortedTests
 {
     [TestCase( new int[] { 2, 7, 11, 15 }, 9, ExpectedResult = new int[] { 1, 2 } )]

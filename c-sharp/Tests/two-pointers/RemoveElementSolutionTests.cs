@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class RemoveElementSolutionTests
 {
     [TestCase( new int[] { 3, 2, 2, 3 }, 3, new int[] { 2, 2 }, ExpectedResult = 2 )]

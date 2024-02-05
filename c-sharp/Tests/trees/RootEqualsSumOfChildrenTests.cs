@@ -5,7 +5,6 @@ using NUnit.Framework;
 using Problems;
 using Problems.Common;
 
-[TestFixture]
 public class RootEqualsSumOfChildrenTests
 {
     [TestCaseSource( nameof( TestCases ) )]

@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class ConvertTheTemperatureTests
 {
     [TestCase( 36.50, ExpectedResult = new double[] { 309.65000, 97.70000 } )]

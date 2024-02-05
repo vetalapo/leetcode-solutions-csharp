@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class ShuffleTheArrayTests
 {
     [TestCase( new int[] { 2, 5, 1, 3, 4, 7 }, 3, ExpectedResult = new int[] { 2, 3, 5, 4, 1, 7 } )]

@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class MinStackTests
 {
     [Test]

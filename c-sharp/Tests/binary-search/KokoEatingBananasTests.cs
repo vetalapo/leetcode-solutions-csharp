@@ -2,7 +2,6 @@
 
 using Problems;
 
-[TestFixture]
 public class KokoEatingBananasTests
 {
     [TestCase( new int[] { 3, 6, 7, 11 }, 8, ExpectedResult = 4 )]
