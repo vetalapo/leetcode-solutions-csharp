@@ -3,12 +3,25 @@
  * Valid Anagram
  **
  * Given two strings s and t, return true if t is an anagram of s, and false otherwise.
- * 
- * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+ * An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, 
  * typically using all the original letters exactly once.
- * 
+ *
+ * Example 1:
+ *   Input: s = "anagram", t = "nagaram"
+ *   Output: true
+ *
+ * Example 2:
+ *   Input: s = "rat", t = "car"
+ *   Output: false
+ *
+ * Constraints:
+ *   • 1 <= s.length, t.length <= 5 * 104
+ *   • s and t consist of lowercase English letters.
+ *
+ * Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+ **
  * https://leetcode.com/problems/valid-anagram/
- */
+***/
 
 namespace Problems;
 
@@ -26,23 +39,18 @@ public class ValidAnagram
             return true;
         }
 
-        Dictionary<char, int> sCounts = new Dictionary<char, int>();
-        Dictionary<char, int> tCounts = new Dictionary<char, int>();
+        Dictionary<char, int> sCounts = [];
+        Dictionary<char, int> tCounts = [];
 
         for ( int i = 0; i < s.Length; i++ )
         {
-            sCounts[s[i]] = 1 + ( sCounts.ContainsKey( s[i] ) ? sCounts[s[i]] : 0 );
-            tCounts[t[i]] = 1 + ( tCounts.ContainsKey( t[i] ) ? tCounts[t[i]] : 0 );
+            sCounts[s[i]] = 1 + ( sCounts.TryGetValue( s[i], out int sValue ) ? sValue : 0 );
+            tCounts[t[i]] = 1 + ( tCounts.TryGetValue( t[i], out int tValue ) ? tValue : 0 );
         }
 
-        foreach ( char c in sCounts.Keys )
+        foreach ( (char sKey, int sValue) in sCounts )
         {
-            if ( !tCounts.ContainsKey( c ) )
-            {
-                return false;
-            }
-
-            if ( sCounts[c] != tCounts[c] )
+            if ( !tCounts.TryGetValue( sKey, out int value ) || value != sValue )
             {
                 return false;
             }
@@ -63,10 +71,10 @@ public class ValidAnagram
             return true;
         }
 
-        char[] sCharacters = s.ToArray();
+        char[] sCharacters = [.. s];
         Array.Sort( sCharacters );
 
-        char[] tCharacters = t.ToArray();
+        char[] tCharacters = [.. t];
         Array.Sort( tCharacters );
 
         return new string( sCharacters ) == new string( tCharacters );
