@@ -6,7 +6,7 @@
         "test": "tests"
     },
     "scripts": {
-        "test": "jest"
+        "test": "clear && jest"
     },
     "repository": {
         "type": "git",
