@@ -53,7 +53,7 @@ public class GroupAnagramsSolution
         return groups.Values.ToList();
     }
 
-    private string GetAnagramHash( string str )
+    private static string GetAnagramHash( string str )
     {
         char[] frequencyArr = new char[26];
 

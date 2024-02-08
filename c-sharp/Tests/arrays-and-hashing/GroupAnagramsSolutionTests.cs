@@ -16,7 +16,7 @@ public class GroupAnagramsSolutionTests
         IList<IList<string>> result = solution.GroupAnagrams( strs );
 
         // Assert
-        return result.OrderBy( x => x.Count() ).ToList();
+        return result.OrderBy( x => x.Count ).ToList();
     }
     private static IEnumerable TestCases
     {
