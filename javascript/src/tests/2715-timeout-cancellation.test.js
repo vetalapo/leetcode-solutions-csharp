@@ -4,11 +4,11 @@ jest.useFakeTimers();
 jest.spyOn(global, "setTimeout");
 
 test("Returns a function", async () => {
-	const fn = (x) => x * 5;
+    const fn = (x) => x * 5;
     const args = [2];
-	const t = 20;
+    const t = 20;
 
-	expect(typeof cancellable(fn, args, t)).toBe("function");
+    expect(typeof cancellable(fn, args, t)).toBe("function");
 });
 
 test("Passed function with timers", async () => {
@@ -16,9 +16,9 @@ test("Passed function with timers", async () => {
   
     const fn = (x) => x * 5;
     const args = [2];
-	const t = 20;
+    const t = 20;
 
-	const cancelTimeMs = 50;
+    const cancelTimeMs = 50;
     const start = performance.now();
   
     const log = (...argsArr) => {

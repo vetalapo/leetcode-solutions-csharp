@@ -16,8 +16,8 @@ test("Wrapper forms the right string format", async () => {
 });
 
 test("Empty arrays in input", async () => {
-	const obj1 = new ArrayWrapper([]);
-	const obj2 = new ArrayWrapper([]);
+    const obj1 = new ArrayWrapper([]);
+    const obj2 = new ArrayWrapper([]);
 
-	expect(obj1 + obj2).toEqual(0);
+    expect(obj1 + obj2).toEqual(0);
 });

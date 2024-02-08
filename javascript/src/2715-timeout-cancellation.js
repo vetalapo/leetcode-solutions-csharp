@@ -17,7 +17,7 @@
  * Example 1:
  *   Input: fn = (x) => x * 5, args = [2], t = 20
  *   Output: [{"time": 20, "returned": 10}]
- *   Explanation: 
+ *   Explanation:
  *     const cancelTimeMs = 50;
  *     const cancelFn = cancellable((x) => x * 5, [2], 20);
  *     setTimeout(cancelFn, cancelTimeMs);
@@ -28,7 +28,7 @@
  * Example 2:
  *   Input: fn = (x) => x**2, args = [2], t = 100
  *   Output: []
- *   Explanation: 
+ *   Explanation:
  *     const cancelTimeMs = 50;
  *     const cancelFn = cancellable((x) => x**2, [2], 100);
  *     setTimeout(cancelFn, cancelTimeMs);
@@ -40,7 +40,7 @@
  * Example 3:
  *   Input: fn = (x1, x2) => x1 * x2, args = [2,4], t = 30
  *   Output: [{"time": 30, "returned": 8}]
- *   Explanation: 
+ *   Explanation:
  *     const cancelTimeMs = 100;
  *     const cancelFn = cancellable((x1, x2) => x1 * x2, [2,4], 30);
  *     setTimeout(cancelFn, cancelTimeMs);
