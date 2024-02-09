@@ -54,16 +54,72 @@ public class TopKFrequentElements
 
         foreach ( (int key, int value) in frequencyMap )
         {
-            priorityQueue.Enqueue( key, value * -1 );
+            priorityQueue.Enqueue( key, value );
+
+            if ( priorityQueue.Count > k )
+            {
+                priorityQueue.Dequeue();
+            }
         }
 
         int[] result = new int[k];
 
-        for ( int i = 0; i < k; i++ )
+        for ( int i = k - 1; i >= 0; i-- )
         {
             result[i] = priorityQueue.Dequeue();
         }
 
         return result;
+    }
+
+    public int[] TopKFrequentBucketSort( int[] nums, int k )
+    {
+        // Counting occurrence of each num
+        Dictionary<int, int> countMap = [];
+
+        foreach ( int num in nums )
+        {
+            ref int valOrNull = ref CollectionsMarshal.GetValueRefOrNullRef( countMap, num );
+
+            if ( Unsafe.IsNullRef( ref valOrNull ) )
+            {
+                countMap[num] = 1;
+            }
+            else
+            {
+                valOrNull++;
+            }
+        }
+
+        // Bucket sort of counts
+        List<int>[] frequency = new List<int>[nums.Length + 1];
+
+        for ( int i = 0; i < frequency.Length; i++ )
+        {
+            frequency[i] = [];
+        }
+
+        foreach ( (int num, int count) in countMap )
+        {
+            frequency[count].Add( num );
+        }
+
+        // Going through sorted in bucket to form the result
+        List<int> result = [];
+
+        for ( int i = frequency.Length - 1; i >= 0; i-- )
+        {
+            foreach ( int num in frequency[i] )
+            {
+                result.Add( num );
+
+                if ( result.Count == k )
+                {
+                    return [.. result];
+                }
+            }
+        }
+
+        return [.. result];
     }
 }
