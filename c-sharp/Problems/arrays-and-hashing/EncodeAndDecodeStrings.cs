@@ -2,13 +2,26 @@
  * 271
  * Encode and Decode Strings
  **
- * Design an algorithm to encode a list of strings to a string.
- * The encoded string is then sent over the network and is decoded back to the original list of strings.
- * 
- * Please implement encode and decode
+ * Design an algorithm to encode a list of strings to a single string.
+ * The encoded string is then decoded back to the original list of strings.
  *
+ * Please implement encode and decode.
+ *
+ * Example 1:
+ *   Input: ["neet","code","love","you"]
+ *   Output:["neet","code","love","you"]
+ *
+ * Example 2:
+ *   Input: ["we","say",":","yes"]
+ *   Output: ["we","say",":","yes"]
+ *
+ * Constraints:
+ *   • 0 <= strs.length < 100
+ *   • 0 <= strs[i].length < 200
+ *   • strs[i] contains only UTF-8 characters.
+ **
  *  https://leetcode.com/problems/encode-and-decode-strings/
- */
+***/
 
 namespace Problems;
 
@@ -18,7 +31,7 @@ public class EncodeAndDecodeStrings
 
     public IList<string> Decode( string str )
     {
-        List<string> result = new();
+        List<string> result = [];
 
         int i = 0;
 
@@ -31,13 +44,13 @@ public class EncodeAndDecodeStrings
                 j++;
             }
 
-            int.TryParse( str.Substring( i, j - i ), out int currentWordLength );
+            int.TryParse( str.AsSpan( i, j - i ), out int wordLength );
             
             j++;
 
-            result.Add( str.Substring( j, currentWordLength ) );
+            result.Add( str.Substring( j, wordLength ) );
 
-            i = j + currentWordLength;
+            i = j + wordLength;
         }
 
         return result;
