@@ -8,19 +8,33 @@ public class MinStackTests
     public void MinStackTest()
     {
         // Arrange
-        MinStack stack = new();
+        MinStack minStack = new();
 
         // Act
-        stack.Push( -2 );
-        stack.Push( 0 );
-        stack.Push( -3 );
+        minStack.Push( -2 );
+        minStack.Push( 0 );
+        minStack.Push( -3 );
 
         // Assert
-        Assert.AreEqual( stack.GetMin(), -3 );
+        Assert.AreEqual( minStack.GetMin(), -3 );
 
-        stack.Pop();
+        minStack.Pop();
 
-        Assert.AreEqual( stack.Top(), 0 );
-        Assert.AreEqual( stack.GetMin(), -2 );
+        Assert.AreEqual( minStack.Top(), 0 );
+        Assert.AreEqual( minStack.GetMin(), -2 );
+    }
+
+    [Test]
+    public void MinStackMinCheckTest()
+    {
+        // Arrange
+        MinStack minStack = new();
+
+        // Act
+        minStack.Push( -2 );
+
+        // Assert
+        Assert.AreEqual( minStack.Top(), -2 );
+        Assert.AreEqual( minStack.GetMin(), -2 );
     }
 }

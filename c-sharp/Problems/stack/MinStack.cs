@@ -46,8 +46,7 @@ namespace Problems;
 
 public class MinStack
 {
-    private readonly Stack<int> _stack = [];
-    private readonly Stack<int> _minStack = [];
+    private readonly Stack<(int val, int min)> _minStack = [];
 
     public MinStack()
     {
@@ -55,31 +54,28 @@ public class MinStack
 
     public void Push( int val )
     {
-        _stack.Push( val );
-
-        if ( _minStack.TryPeek( out int minStackValue ) )
+        if ( _minStack.TryPeek( out (int val, int min) stackValue ) )
         {
-            _minStack.Push( Math.Min( minStackValue, val ) );
+            _minStack.Push( (val, Math.Min( stackValue.min, val )) );
         }
         else
         {
-            _minStack.Push( val );
+            _minStack.Push( (val, val) );
         }
     }
 
     public void Pop()
     {
-        _stack.Pop();
         _minStack.Pop();
     }
 
     public int Top()
     {
-        return _stack.Pop();
+        return _minStack.Peek().val;
     }
 
     public int GetMin()
     {
-        return _minStack.Peek();
+        return _minStack.Peek().min;
     }
 }
