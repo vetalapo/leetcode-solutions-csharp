@@ -25,7 +25,7 @@ public class GenerateParenthesesSolution
     public IList<string> GenerateParenthesis( int n )
     {
         List<string> result = [];
-        Stack<string> stack = [];
+        Stack<char> stack = [];
 
         void backtrack( int openP, int closedP )
         {
@@ -38,7 +38,7 @@ public class GenerateParenthesesSolution
 
             if ( openP < n )
             {
-                stack.Push( "(" );
+                stack.Push( '(' );
 
                 backtrack( openP + 1, closedP );
 
@@ -47,7 +47,7 @@ public class GenerateParenthesesSolution
 
             if ( closedP < openP )
             {
-                stack.Push( ")" );
+                stack.Push( ')' );
 
                 backtrack( openP, closedP + 1 );
 
