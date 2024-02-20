@@ -22,6 +22,11 @@
  * Constraints: 
  *   • 1 <= temperatures.length <= 105
  *   • 30 <= temperatures[i] <= 100
+ *
+ * Hint 1:
+ *   If the temperature is say, 70 today,
+ *   then in the future a warmer temperature must be either 71, 72, 73, ..., 99, or 100.
+ *   We could remember when all of them occur next.
  **
  * https://leetcode.com/problems/daily-temperatures/
 ***/
