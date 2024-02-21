@@ -62,6 +62,30 @@ public class CarFleetSolution
 {
     public int CarFleet( int target, int[] position, int[] speed )
     {
+        if ( position.Length == 1 )
+        {
+            return 1;
+        }
+
+        Array.Sort( position, speed );
+
+        Stack<double> stack = [];
+
+        for ( int i = position.Length - 1; i >= 0; i-- )
+        {
+            double time = ( target - position[i] ) / (double)speed[i];
+
+            if ( stack.Count == 0 || time > stack.Peek() )
+            {
+                stack.Push( time );
+            }
+        }
+
+        return stack.Count;
+    }
+
+    public int CarFleetPairsSortTogether( int target, int[] position, int[] speed )
+    {
         (int position, int speed)[] pairs = new (int, int)[position.Length];
 
         for ( int i = 0; i < pairs.Length; i++ )
