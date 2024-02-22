@@ -10,7 +10,7 @@ public class LargestRectangleInHistogramTests
     public int LargestRectangleAreaTest( int[] heights ) => new LargestRectangleInHistogram().LargestRectangleArea( heights );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int LargestRectangleAreaOneLoopTest( int[] heights ) => new LargestRectangleInHistogram().LargestRectangleAreaOneLoop( heights );
+    public int LargestRectangleExplicitTest( int[] heights ) => new LargestRectangleInHistogram().LargestRectangleExplicit( heights );
 
     private static IEnumerable TestCases
     {

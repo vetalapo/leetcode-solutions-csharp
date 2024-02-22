@@ -28,6 +28,30 @@ public class LargestRectangleInHistogram
 {
     public int LargestRectangleArea( int[] heights )
     {
+        int largest = 0;
+        Stack<(int Index, int Val)> stack = [];
+
+        for ( int i = 0; i <= heights.Length; i++ )
+        {
+            int num = i >= heights.Length ? 0 : heights[i];
+            int minStackNumIndex = i;
+
+            while ( stack.TryPeek( out (int Index, int Val) topStack ) && topStack.Val > num )
+            {
+                largest = Math.Max( largest, topStack.Val * ( i - topStack.Index ) );
+                minStackNumIndex = topStack.Index;
+
+                stack.Pop();
+            }
+
+            stack.Push( (Index: minStackNumIndex, Val: num) );
+        }
+
+        return largest;
+    }
+
+    public int LargestRectangleExplicit( int[] heights )
+    {
         int maxArea = 0;
         Stack<(int inx, int val)> stack = new();
 
@@ -58,29 +82,5 @@ public class LargestRectangleInHistogram
         }
 
         return maxArea;
-    }
-
-    public int LargestRectangleAreaOneLoop( int[] heights )
-    {
-        int largest = 0;
-        Stack<(int Index, int Val)> stack = [];
-
-        for ( int i = 0; i <= heights.Length; i++ )
-        {
-            int num = i >= heights.Length ? 0 : heights[i];
-            int minStackNumIndex = i;
-
-            while ( stack.TryPeek( out (int Index, int Val) topStack ) && topStack.Val > num )
-            {
-                largest = Math.Max( largest, topStack.Val * ( i - topStack.Index ) );
-                minStackNumIndex = topStack.Index;
-
-                stack.Pop();
-            }
-
-            stack.Push( (Index: minStackNumIndex, Val: num) );
-        }
-
-        return largest;
     }
 }
