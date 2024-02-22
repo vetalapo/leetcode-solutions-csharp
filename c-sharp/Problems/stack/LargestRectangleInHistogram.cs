@@ -2,11 +2,25 @@
  * 84
  * Largest Rectangle in Histogram
  **
- * Given an array of integers heights representing the histogram's bar height where the width of each bar is 1,
- * return the area of the largest rectangle in the histogram.
- * 
+ * Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.
+ *
+ * Example 1:
+ *   Input: heights = [2,1,5,6,2,3]
+ *   Output: 10
+ *   Explanation:
+ *     The above is a histogram where width of each bar is 1.
+ *     The largest rectangle is shown in the red area, which has an area = 10 units.
+ *
+ * Example 2:
+ *   Input: heights = [2,4]
+ *   Output: 4
+ *
+ * Constraints:
+ *   • 1 <= heights.length <= 105
+ *   • 0 <= heights[i] <= 104
+ **
  * https://leetcode.com/problems/largest-rectangle-in-histogram/
- */
+***/
 
 namespace Problems;
 
@@ -48,26 +62,25 @@ public class LargestRectangleInHistogram
 
     public int LargestRectangleAreaOneLoop( int[] heights )
     {
-        int maxArea = 0;
-        Stack<int> indxStack = new();
+        int largest = 0;
+        Stack<(int Index, int Val)> stack = [];
 
         for ( int i = 0; i <= heights.Length; i++ )
         {
-            int height = i < heights.Length ? heights[i] : 0;
+            int num = i >= heights.Length ? 0 : heights[i];
+            int minStackNumIndex = i;
 
-            while ( indxStack.Count > 0 && heights[indxStack.Peek()] > height )
+            while ( stack.TryPeek( out (int Index, int Val) topStack ) && topStack.Val > num )
             {
-                int currentHeight = heights[indxStack.Pop()];
-                int previousIndex = indxStack.Count == 0 ? -1 : indxStack.Peek();
+                largest = Math.Max( largest, topStack.Val * ( i - topStack.Index ) );
+                minStackNumIndex = topStack.Index;
 
-                int currentArea = currentHeight * ( i - 1 - previousIndex );
-
-                maxArea = Math.Max( maxArea, currentArea );
+                stack.Pop();
             }
 
-            indxStack.Push( i );
+            stack.Push( (Index: minStackNumIndex, Val: num) );
         }
 
-        return maxArea;
+        return largest;
     }
 }

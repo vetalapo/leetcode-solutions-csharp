@@ -18,6 +18,7 @@ public class LargestRectangleInHistogramTests
         {
             yield return new TestCaseData( new int[] { 2, 1, 5, 6, 2, 3 } ).Returns( 10 );
             yield return new TestCaseData( new int[] { 2, 4 } ).Returns( 4 );
+            yield return new TestCaseData( new int[] { 2, 1, 2 } ).Returns( 3 );
         }
     }
 }
