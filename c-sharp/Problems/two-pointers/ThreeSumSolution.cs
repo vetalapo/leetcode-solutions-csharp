@@ -62,7 +62,7 @@ public class ThreeSumSolution
 
                 if ( threeSum == 0 )
                 {
-                    result.Add( new List<int> { nums[i], nums[left], nums[right] } );
+                    result.Add( [nums[i], nums[left], nums[right]] );
 
                     left++;
 
