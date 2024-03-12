@@ -1,15 +1,9 @@
 ﻿using System.Text;
 
-public class ListNode
+public class ListNode( int val = 0, ListNode next = null )
 {
-    public int val;
-    public ListNode next;
-
-    public ListNode( int val = 0, ListNode next = null )
-    {
-        this.val = val;
-        this.next = next;
-    }
+    public int val = val;
+    public ListNode next = next;
 
     public static ListNode Create( int[] values )
     {
@@ -25,7 +19,7 @@ public class ListNode
 
     public static int[] GetValues( ListNode node )
     {
-        List<int> result = new();
+        List<int> result = [];
 
         while ( node != null )
         {
@@ -34,7 +28,7 @@ public class ListNode
             node = node.next;
         }
 
-        return result.ToArray();
+        return [.. result];
     }
 
     public override bool Equals( object? obj )
