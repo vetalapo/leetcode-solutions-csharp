@@ -21,6 +21,9 @@
  * https://leetcode.com/problems/longest-consecutive-sequence/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class LongestConsecutiveSequence

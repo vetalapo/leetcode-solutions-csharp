@@ -12,6 +12,8 @@
  * https://leetcode.com/problems/sliding-window-maximum/
  */
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class SlidingWindowMaximum

@@ -31,6 +31,8 @@
  * https://leetcode.com/problems/daily-temperatures/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class DailyTemperaturesSolution

@@ -53,6 +53,9 @@
  * https://leetcode.com/problems/split-strings-by-separator/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class SplitStringsBySeparator

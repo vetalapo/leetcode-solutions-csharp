@@ -15,6 +15,8 @@
  * https://leetcode.com/problems/minimum-window-substring/
  */
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class MinimumWindowSubstring

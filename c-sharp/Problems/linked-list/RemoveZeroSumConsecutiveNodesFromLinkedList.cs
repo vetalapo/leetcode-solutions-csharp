@@ -33,6 +33,8 @@
  * https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 /**

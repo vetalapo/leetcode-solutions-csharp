@@ -45,6 +45,9 @@
  * https://leetcode.com/problems/evaluate-reverse-polish-notation/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class EvaluateReversePolishNotation

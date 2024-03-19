@@ -11,6 +11,7 @@
  * https://leetcode.com/problems/fizz-buzz/
  */
 
+using System.Collections.Generic;
 using System.Text;
 
 namespace Problems;

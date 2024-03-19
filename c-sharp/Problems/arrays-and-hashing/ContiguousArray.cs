@@ -22,6 +22,9 @@
  * https://leetcode.com/problems/contiguous-array/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class ContiguousArray

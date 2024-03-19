@@ -33,6 +33,9 @@
  * https://leetcode.com/problems/count-elements-with-maximum-frequency/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class CountElementsWithMaximumFrequency

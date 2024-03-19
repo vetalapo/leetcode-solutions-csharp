@@ -39,6 +39,7 @@
  * https://leetcode.com/problems/design-parking-system/
 ***/
 
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 namespace Problems;

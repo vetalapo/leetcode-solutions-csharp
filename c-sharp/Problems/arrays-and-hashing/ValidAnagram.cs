@@ -23,6 +23,9 @@
  * https://leetcode.com/problems/valid-anagram/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class ValidAnagram

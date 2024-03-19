@@ -33,6 +33,8 @@
  * https://leetcode.com/problems/find-words-containing-character/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class FindWordsContainingCharacter

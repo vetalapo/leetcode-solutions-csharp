@@ -18,6 +18,9 @@
  * https://leetcode.com/problems/time-based-key-value-store/
  */
 
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Problems;
 
 public class TimeMap

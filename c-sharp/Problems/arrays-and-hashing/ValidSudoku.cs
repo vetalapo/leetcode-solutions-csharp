@@ -50,6 +50,9 @@
  **
  * https://leetcode.com/problems/valid-sudoku/
 ***/
+
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class ValidSudoku

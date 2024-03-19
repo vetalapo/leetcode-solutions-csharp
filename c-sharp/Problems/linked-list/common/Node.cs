@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.Generic;
+using System.Text;
 
 public class Node
 {
@@ -23,7 +24,7 @@ public class Node
             (int? val, int? randomNodeIndex) item = (arr[i][0], arr[i][1]);
             indexedNodes[i] = new Node( val: (int)item.val );
         }
-        
+
         Node result = null;
 
         for ( int i = arr.Length - 1; i >= 0; i-- )

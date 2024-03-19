@@ -42,6 +42,9 @@
  * https://leetcode.com/problems/custom-sort-string/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class CustomSortStringSolution

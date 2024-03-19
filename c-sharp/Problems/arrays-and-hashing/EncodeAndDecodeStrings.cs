@@ -23,6 +23,10 @@
  *  https://leetcode.com/problems/encode-and-decode-strings/
 ***/
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Problems;
 
 public class EncodeAndDecodeStrings
@@ -45,7 +49,7 @@ public class EncodeAndDecodeStrings
             }
 
             int.TryParse( str.AsSpan( i, j - i ), out int wordLength );
-            
+
             j++;
 
             result.Add( str.Substring( j, wordLength ) );

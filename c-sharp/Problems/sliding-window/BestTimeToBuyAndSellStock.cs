@@ -28,6 +28,8 @@
  * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class BestTimeToBuyAndSellStock

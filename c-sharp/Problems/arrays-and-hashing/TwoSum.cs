@@ -48,6 +48,8 @@
  * https://leetcode.com/problems/two-sum/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class TwoSumSolution

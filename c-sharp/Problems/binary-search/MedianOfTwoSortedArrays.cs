@@ -8,6 +8,8 @@
  * https://leetcode.com/problems/median-of-two-sorted-arrays/
  */
 
+using System;
+
 namespace Problems;
 
 public class MedianOfTwoSortedArrays
@@ -31,7 +33,7 @@ public class MedianOfTwoSortedArrays
         int total = nums1.Length + nums2.Length;
         int half = total / 2;
 
-        // Preffering smaller array to be first so binary search operates on smaller set
+        // Preferring smaller array to be first so binary search operates on smaller set
         if ( nums1.Length > nums2.Length )
         {
             return FindMedianSortedArrays( nums2, nums1 );

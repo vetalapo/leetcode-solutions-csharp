@@ -23,6 +23,8 @@
  * https://leetcode.com/problems/intersection-of-two-arrays/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class IntersectionOfTwoArrays

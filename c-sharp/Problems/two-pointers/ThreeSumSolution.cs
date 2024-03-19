@@ -36,6 +36,9 @@
  * https://leetcode.com/problems/3sum/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class ThreeSumSolution

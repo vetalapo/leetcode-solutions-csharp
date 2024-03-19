@@ -28,6 +28,10 @@
  * https://leetcode.com/problems/group-anagrams/
 ***/
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Problems;
 
 public class GroupAnagramsSolution

@@ -18,6 +18,10 @@
  * https://leetcode.com/problems/generate-parentheses/
 ***/
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Problems;
 
 public class GenerateParenthesesSolution

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Collections.Generic;
+using System.Text;
 
 public class ListNode( int val = 0, ListNode next = null )
 {

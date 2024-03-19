@@ -16,6 +16,9 @@
  * https://leetcode.com/problems/koko-eating-bananas/
  */
 
+using System;
+using System.Linq;
+
 namespace Problems;
 
 public class KokoEatingBananas

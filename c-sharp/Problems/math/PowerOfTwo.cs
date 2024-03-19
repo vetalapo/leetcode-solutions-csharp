@@ -26,6 +26,8 @@
  * https://leetcode.com/problems/power-of-two/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class PowerOfTwo

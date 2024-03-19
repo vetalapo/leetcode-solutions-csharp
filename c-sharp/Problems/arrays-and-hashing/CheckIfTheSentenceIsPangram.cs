@@ -28,6 +28,8 @@
  * https://leetcode.com/problems/check-if-the-sentence-is-pangram/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class CheckIfTheSentenceIsPangram

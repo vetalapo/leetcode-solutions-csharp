@@ -34,6 +34,8 @@
  * https://leetcode.com/problems/valid-palindrome/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class ValidPalindrome

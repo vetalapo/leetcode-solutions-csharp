@@ -33,6 +33,9 @@
  * https://leetcode.com/problems/concatenation-of-array/
 **/
 
+using System;
+using System.Linq;
+
 namespace Problems;
 
 public class ConcatenationOfArray

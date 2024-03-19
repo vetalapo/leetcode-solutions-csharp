@@ -36,6 +36,8 @@
  * https://leetcode.com/problems/first-letter-to-appear-twice/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class FirstLetterToAppearTwice

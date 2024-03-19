@@ -37,6 +37,8 @@
  * https://leetcode.com/problems/find-the-pivot-integer/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class FindThePivotInteger

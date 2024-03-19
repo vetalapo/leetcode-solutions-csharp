@@ -24,6 +24,8 @@
  * https://leetcode.com/problems/trapping-rain-water/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class TrappingRainWater

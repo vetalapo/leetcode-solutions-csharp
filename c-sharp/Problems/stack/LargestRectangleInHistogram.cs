@@ -22,6 +22,9 @@
  * https://leetcode.com/problems/largest-rectangle-in-histogram/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class LargestRectangleInHistogram

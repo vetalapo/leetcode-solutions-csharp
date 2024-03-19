@@ -48,6 +48,8 @@
  * https://leetcode.com/problems/bag-of-tokens/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class BagOfTokens

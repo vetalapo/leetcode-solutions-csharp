@@ -37,6 +37,9 @@
  * https://leetcode.com/problems/maximum-odd-binary-number/
 ***/
 
+using System;
+using System.Linq;
+
 namespace Problems;
 
 public class MaximumOddBinaryNumberSolution

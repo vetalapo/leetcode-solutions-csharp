@@ -23,6 +23,8 @@
  **
 **/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class NumberOfGoodPairs

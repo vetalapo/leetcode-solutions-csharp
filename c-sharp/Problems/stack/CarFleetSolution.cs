@@ -56,6 +56,10 @@
  * https://leetcode.com/problems/car-fleet/
 ***/
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
 namespace Problems;
 
 public class CarFleetSolution

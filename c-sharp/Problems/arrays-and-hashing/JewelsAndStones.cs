@@ -25,6 +25,8 @@
  * https://leetcode.com/problems/jewels-and-stones/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class JewelsAndStones

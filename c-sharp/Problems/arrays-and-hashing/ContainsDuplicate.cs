@@ -25,6 +25,8 @@
  * https://leetcode.com/problems/contains-duplicate/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class ContainsDuplicateSolution

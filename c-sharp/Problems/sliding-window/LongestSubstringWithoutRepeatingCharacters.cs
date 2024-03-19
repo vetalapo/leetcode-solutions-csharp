@@ -30,6 +30,9 @@
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class LongestSubstringWithoutRepeatingCharacters
@@ -72,7 +75,7 @@ public class LongestSubstringWithoutRepeatingCharacters
 
             charSet.Add( s[right] );
 
-            maxLength = Math.Max ( maxLength, right - left + 1 );
+            maxLength = Math.Max( maxLength, right - left + 1 );
         }
 
         return maxLength;

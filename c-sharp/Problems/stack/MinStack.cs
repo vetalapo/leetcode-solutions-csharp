@@ -42,6 +42,9 @@
  * https://leetcode.com/problems/min-stack/
 ***/
 
+using System;
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class MinStack

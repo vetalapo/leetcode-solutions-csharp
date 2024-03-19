@@ -40,6 +40,8 @@
  * https://leetcode.com/problems/missing-number/
 ***/
 
+using System.Linq;
+
 namespace Problems;
 
 public class MissingNumberSolution

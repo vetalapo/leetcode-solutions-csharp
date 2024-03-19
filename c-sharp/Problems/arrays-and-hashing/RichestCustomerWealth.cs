@@ -11,6 +11,8 @@
  * https://leetcode.com/problems/richest-customer-wealth/
  */
 
+using System;
+
 namespace Problems;
 
 public class RichestCustomerWealth

@@ -38,6 +38,8 @@
  * https://leetcode.com/problems/valid-parentheses/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class ValidParentheses

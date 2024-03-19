@@ -29,6 +29,8 @@
  * https://leetcode.com/problems/longest-repeating-character-replacement/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class LongestRepeatingCharacterReplacement
@@ -36,7 +38,7 @@ public class LongestRepeatingCharacterReplacement
     public int CharacterReplacement( string s, int k )
     {
         int maxLength = 0;
-        
+
         int[] charCount = new int[26]; // 0 - A; 25 - Z
         int mostFreqLetterCnt = 0;
 

@@ -28,6 +28,8 @@
  * https://leetcode.com/problems/product-of-array-except-self/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class ProductOfArrayExceptSelf

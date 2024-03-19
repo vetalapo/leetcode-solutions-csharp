@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 
 using NUnit.Framework;
 
@@ -11,7 +12,7 @@ public class ConcatenationOfArrayTests
 
     [TestCaseSource( nameof( TestCases ) )]
     public int[] GetConcatenationSLTest( int[] nums ) => new ConcatenationOfArray().GetConcatenationSL( nums );
-    
+
     [TestCaseSource( nameof( TestCases ) )]
     public int[] GetConcatenationSpanTest( int[] nums ) => new ConcatenationOfArray().GetConcatenationSpan( nums );
 

@@ -27,6 +27,8 @@
  * https://leetcode.com/problems/ransom-note/
 ***/
 
+using System.Collections.Generic;
+
 namespace Problems;
 
 public class RansomNote
@@ -35,9 +37,9 @@ public class RansomNote
     {
         Dictionary<char, ulong> magazineMap = new();
 
-        foreach( char c in magazine )
+        foreach ( char c in magazine )
         {
-            if ( !magazineMap.ContainsKey( c ))
+            if ( !magazineMap.ContainsKey( c ) )
             {
                 magazineMap[c] = 0;
             }

@@ -46,6 +46,8 @@
  * https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class MinimumNumberOfArrowsToBurstBalloons

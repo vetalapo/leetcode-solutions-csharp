@@ -23,6 +23,8 @@
  * https://leetcode.com/problems/reverse-integer/
 ***/
 
+using System;
+
 namespace Problems;
 
 public class ReverseInteger
