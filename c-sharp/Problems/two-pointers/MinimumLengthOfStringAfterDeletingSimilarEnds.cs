@@ -10,7 +10,7 @@
  *   3. The prefix and the suffix should not intersect at any index.
  *   4. The characters from the prefix and suffix must be the same.
  *   5. Delete both the prefix and the suffix.
- * 
+ *
  * Return the minimum length of s after performing the above operation any number of times (possibly zero times).
  *
  * Example 1: 
@@ -37,12 +37,12 @@
  * Constraints:
  *   • 1 <= s.length <= 105
  *   • s only consists of characters 'a', 'b', and 'c'.
- *   
+ *
  * Hint 1:
  *   If both ends have distinct characters, no more operations can be made.
  *   Otherwise, the only operation is to remove all of the same characters from both ends.
  *   We will do this as many times as we can.
- * 
+ *
  * Hint 2:
  *   Note that if the length is equal 1 the answer is 1
  **
