@@ -7,9 +7,9 @@
  * 
  * Constraints:
  *   The tree consists only of the root, its left child, and its right child.
- *   
+ **
  * https://leetcode.com/problems/root-equals-sum-of-children/
- */
+***/
 
 using Problems.Common;
 
