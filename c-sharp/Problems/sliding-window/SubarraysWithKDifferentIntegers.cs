@@ -13,7 +13,7 @@
  *   Explanation:
  *     Subarrays formed with exactly 2 different integers:
  *     [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2]
- * 
+ *
  * Example 2:
  *   Input: nums = [1,2,1,3,4], k = 3
  *   Output: 3
