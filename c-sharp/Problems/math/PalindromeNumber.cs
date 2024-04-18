@@ -19,13 +19,11 @@
  *   Output: false
  *   Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
  *
- *
  * Constraints:
- *   -231 <= x <= 231 - 1
- *
+ *   -2^31 <= x <= 2^31 - 1
  *
  * Follow up: Could you solve it without converting the integer to a string?
- * 
+ *
  * Hint 1: Beware of overflow when you reverse the integer.
  **
  * https://leetcode.com/problems/palindrome-number/
