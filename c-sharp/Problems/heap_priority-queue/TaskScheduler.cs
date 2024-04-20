@@ -11,21 +11,21 @@
 ​ * Return the minimum number of intervals required to complete all tasks.
  *
  * Example 1:
- * Input: tasks = ["A","A","A","B","B","B"], n = 2
- * Output: 8
- * Explanation:
- *   A possible sequence is: A -> B -> idle -> A -> B -> idle -> A -> B.
- *   After completing task A, you must wait two cycles before doing A again.
- *   The same applies to task B. In the 3rd interval,
- *   neither A nor B can be done, so you idle.
- *   By the 4th cycle, you can do A again as 2 intervals have passed.
+ *   Input: tasks = ["A","A","A","B","B","B"], n = 2
+ *   Output: 8
+ *   Explanation:
+ *     A possible sequence is: A -> B -> idle -> A -> B -> idle -> A -> B.
+ *     After completing task A, you must wait two cycles before doing A again.
+ *     The same applies to task B. In the 3rd interval,
+ *     neither A nor B can be done, so you idle.
+ *     By the 4th cycle, you can do A again as 2 intervals have passed.
  *
  * Example 2:
- * Input: tasks = ["A","C","A","B","D","B"], n = 1
- * Output: 6
- * Explanation:
- *   A possible sequence is: A -> B -> C -> D -> A -> B.
- *   With a cooling interval of 1, you can repeat a task after just one other task.
+ *   Input: tasks = ["A","C","A","B","D","B"], n = 1
+ *   Output: 6
+ *   Explanation:
+ *     A possible sequence is: A -> B -> C -> D -> A -> B.
+ *     With a cooling interval of 1, you can repeat a task after just one other task.
  *
  * Example 3:
  *   Input: tasks = ["A","A","A", "B","B","B"], n = 3
