@@ -26,6 +26,7 @@
  *     It can be proven that there is no achievable number larger than 7.
  *
  * Constraints: 1 <= num, t <= 50
+ *
  * Hint: Let x be the answer, it’s always optimal to decrease x in each operation and increase nums.
  **
  * https://leetcode.com/problems/find-the-maximum-achievable-number/
