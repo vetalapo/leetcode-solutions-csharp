@@ -43,7 +43,7 @@
  *
  * Constraints:
  *   • 0 <= tokens.length <= 1000
- *   • 0 <= tokens[i], power < 104
+ *   • 0 <= tokens[i], power < 10^4
  **
  * https://leetcode.com/problems/bag-of-tokens/
 ***/
