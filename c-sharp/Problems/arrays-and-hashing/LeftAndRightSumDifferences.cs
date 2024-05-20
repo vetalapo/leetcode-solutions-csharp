@@ -28,7 +28,7 @@
  *
  * Constraints:
  *   • 1 <= nums.length <= 1000
- *   • 1 <= nums[i] <= 105
+ *   • 1 <= nums[i] <= 10^5
  *
  * Hint 1: For each index i, maintain two variables leftSum and rightSum.
  *
