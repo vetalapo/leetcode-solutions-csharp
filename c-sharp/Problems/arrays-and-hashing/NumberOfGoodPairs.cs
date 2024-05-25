@@ -18,6 +18,10 @@
  * Example 3:
  *   Input: nums = [1,2,3]
  *   Output: 0
+ *
+ * Constraints:
+ *   • 1 <= nums.length <= 100
+ *   • 1 <= nums[i] <= 100
  **
  * https://leetcode.com/problems/number-of-good-pairs/
  **
