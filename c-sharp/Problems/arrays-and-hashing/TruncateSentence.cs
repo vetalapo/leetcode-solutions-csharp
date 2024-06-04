@@ -36,8 +36,11 @@
  *   The words in s are separated by a single space.
  *   There are no leading or trailing spaces.
  *
- * Hint 1: It's easier to solve this problem on an array of strings so parse the string to an array of words
- * Hint 2: After return the first k words as a sentence
+ * Hint 1:
+ *   It's easier to solve this problem on an array of strings so parse the string to an array of words
+ *
+ * Hint 2:
+ *   After return the first k words as a sentence
  **
  * https://leetcode.com/problems/truncate-sentence/
 ***/
