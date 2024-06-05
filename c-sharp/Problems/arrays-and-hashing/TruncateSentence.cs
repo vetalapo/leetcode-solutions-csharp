@@ -30,11 +30,11 @@
  *   Output: "chopper is not a tanuki"
  *
  * Constraints:
- *   1 <= s.length <= 500
- *   k is in the range [1, the number of words in s].
- *   s consist of only lowercase and uppercase English letters and spaces.
- *   The words in s are separated by a single space.
- *   There are no leading or trailing spaces.
+ *   • 1 <= s.length <= 500
+ *   • k is in the range [1, the number of words in s].
+ *   • s consist of only lowercase and uppercase English letters and spaces.
+ *   • The words in s are separated by a single space.
+ *   • There are no leading or trailing spaces.
  *
  * Hint 1:
  *   It's easier to solve this problem on an array of strings so parse the string to an array of words
