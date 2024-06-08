@@ -19,9 +19,9 @@
  *
  * Constraints:
  *   • n == points.length
- *   • 2 <= n <= 105
+ *   • 2 <= n <= 10^5
  *   • points[i].length == 2
- *   • 0 <= xi, yi <= 109
+ *   • 0 <= xi, yi <= 1^09
  * 
  * Hint 1: Try sorting the points
  * Hint 2: Think is the y-axis of a point relevant
