@@ -18,7 +18,7 @@
  *   Output: 0
  *
  * Constraints:
- *   • 0 <= left <= right <= 231 - 1
+ *   • 0 <= left <= right <= 2^31 - 1
  **
  * https://leetcode.com/problems/bitwise-and-of-numbers-range/
 ***/
