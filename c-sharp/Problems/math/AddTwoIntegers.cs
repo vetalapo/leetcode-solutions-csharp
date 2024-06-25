@@ -2,7 +2,8 @@
  * 2235
  * Add Two Integers
  **
- * Given two integers num1 and num2, return the sum of the two integers.
+ * Given two integers num1 and num2,
+ * return the sum of the two integers.
  *
  * Example 1:
  *   Input: num1 = 12, num2 = 5
