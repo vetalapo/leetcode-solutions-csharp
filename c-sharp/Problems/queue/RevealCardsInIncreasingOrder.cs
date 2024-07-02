@@ -21,7 +21,7 @@
  * Example 1:
  *   Input: deck = [17,13,11,2,3,5,7]
  *   Output: [2,13,3,11,5,17,7]
- *   Explanation: 
+ *   Explanation:
  *     We get the deck in the order [17,13,11,2,3,5,7] (this order does not matter), and reorder it.
  *     After reordering, the deck starts as [2,13,3,11,5,17,7], where 2 is the top of the deck.
  *     We reveal 2, and move 13 to the bottom.  The deck is now [3,11,5,17,7,13].
@@ -39,7 +39,7 @@
  *
  * Constraints:
  *   • 1 <= deck.length <= 1000
- *   • 1 <= deck[i] <= 106
+ *   • 1 <= deck[i] <= 10^6
  *   • All the values of deck are unique.
  **
  * https://leetcode.com/problems/reveal-cards-in-increasing-order/
