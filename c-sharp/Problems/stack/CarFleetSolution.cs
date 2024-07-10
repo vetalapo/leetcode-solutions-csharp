@@ -43,8 +43,7 @@
  *     The cars starting at 0 (speed 4) and 2 (speed 2) become a fleet, meeting each other at 4. The fleet moves at speed 2.
  *     Then, the fleet (speed 2) and the car starting at 4 (speed 1) become one fleet, meeting each other at 6.
  *     The fleet moves at speed 1 until it reaches target.
- *  
- * 
+ *
  * Constraints:
  *   • n == position.length == speed.length
  *   • 1 <= n <= 10^5
