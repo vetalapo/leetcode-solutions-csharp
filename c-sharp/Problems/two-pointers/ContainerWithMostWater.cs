@@ -22,8 +22,8 @@
  *
  * Constraints:
  *   • n == height.length
- *   • 2 <= n <= 105
- *   • 0 <= height[i] <= 104
+ *   • 2 <= n <= 10^5
+ *   • 0 <= height[i] <= 10^4
  *
  * Hint 1:
  *   If you simulate the problem, it will be O(n^2) which is not efficient.
