@@ -35,7 +35,7 @@
  *     - Take prefix = "b" and suffix = "bb" and remove them, s = "cca".
  *
  * Constraints:
- *   • 1 <= s.length <= 105
+ *   • 1 <= s.length <= 10^5
  *   • s only consists of characters 'a', 'b', and 'c'.
  *
  * Hint 1:
