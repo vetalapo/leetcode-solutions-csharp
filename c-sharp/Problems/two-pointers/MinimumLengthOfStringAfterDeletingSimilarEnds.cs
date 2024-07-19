@@ -13,7 +13,7 @@
  *
  * Return the minimum length of s after performing the above operation any number of times (possibly zero times).
  *
- * Example 1: 
+ * Example 1:
  *   Input: s = "ca"
  *   Output: 2
  *   Explanation: You can't remove any characters, so the string stays as is.
@@ -30,9 +30,10 @@
  * Example 3:
  *   Input: s = "aabccabba"
  *   Output: 3
- *   Explanation: An optimal sequence of operations is:
- *     - Take prefix = "aa" and suffix = "a" and remove them, s = "bccabb".
- *     - Take prefix = "b" and suffix = "bb" and remove them, s = "cca".
+ *   Explanation:
+ *     An optimal sequence of operations is:
+ *       • Take prefix = "aa" and suffix = "a" and remove them, s = "bccabb".
+ *       • Take prefix = "b" and suffix = "bb" and remove them, s = "cca".
  *
  * Constraints:
  *   • 1 <= s.length <= 10^5
