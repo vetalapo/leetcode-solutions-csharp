@@ -18,8 +18,8 @@
  *
  * Constraints:
  *   • n == height.length
- *   • 1 <= n <= 2 * 104
- *   • 0 <= height[i] <= 105
+ *   • 1 <= n <= 2 * 10^4
+ *   • 0 <= height[i] <= 10^5
  **
  * https://leetcode.com/problems/trapping-rain-water/
 ***/
