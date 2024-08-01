@@ -8,13 +8,16 @@ using Problems;
 public class ConcatenationOfArrayTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int[] GetConcatenationTest( int[] nums ) => new ConcatenationOfArray().GetConcatenation( nums );
+    public int[] GetConcatenationTest( int[] nums ) =>
+        new ConcatenationOfArray().GetConcatenation( nums );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int[] GetConcatenationSLTest( int[] nums ) => new ConcatenationOfArray().GetConcatenationSL( nums );
+    public int[] GetConcatenationSLTest( int[] nums ) =>
+        new ConcatenationOfArray().GetConcatenationSL( nums );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int[] GetConcatenationSpanTest( int[] nums ) => new ConcatenationOfArray().GetConcatenationSpan( nums );
+    public int[] GetConcatenationSpanTest( int[] nums ) =>
+        new ConcatenationOfArray().GetConcatenationSpan( nums );
 
     private static IEnumerable TestCases
     {
