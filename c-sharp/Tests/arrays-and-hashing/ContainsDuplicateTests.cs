@@ -7,12 +7,12 @@ using Problems;
 public class ContainsDuplicateTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public bool ContainsDuplicateTest( int[] nums ) => new ContainsDuplicateSolution().ContainsDuplicate( nums );
-
+    public bool ContainsDuplicateTest( int[] nums ) =>
+        new ContainsDuplicateSolution().ContainsDuplicate( nums );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public bool ContainsDuplicateAltTest( int[] nums ) => new ContainsDuplicateSolution().ContainsDuplicateAlt( nums );
-
+    public bool ContainsDuplicateAltTest( int[] nums ) =>
+        new ContainsDuplicateSolution().ContainsDuplicateAlt( nums );
 
     private static IEnumerable TestCases
     {
