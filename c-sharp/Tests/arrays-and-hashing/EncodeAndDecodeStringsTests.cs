@@ -6,8 +6,8 @@ using Problems;
 
 public class EncodeAndDecodeStringsTests
 {
-    [TestCase( new object[] { new string[] { "lint", "code", "love", "you" } }, ExpectedResult = "4#lint4#code4#love3#you" )]
-    [TestCase( new object[] { new string[] { "we", "say", ":", "yes" } }, ExpectedResult = "2#we3#say1#:3#yes" )]
+    [TestCase( [new string[] { "lint", "code", "love", "you" }], ExpectedResult = "4#lint4#code4#love3#you" )]
+    [TestCase( [new string[] { "we", "say", ":", "yes" }], ExpectedResult = "2#we3#say1#:3#yes" )]
     public string EncodeTest( IList<string> strs ) =>
         new EncodeAndDecodeStrings().Encode( strs );
 
