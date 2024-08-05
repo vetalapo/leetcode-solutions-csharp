@@ -8,12 +8,12 @@ namespace Problems;
 public class FindAllDuplicatesInAnArrayTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public IList<int> FindDuplicatesTest( int[] nums )
-        => new FindAllDuplicatesInAnArray().FindDuplicates( nums );
+    public IList<int> FindDuplicatesTest( int[] nums ) =>
+        new FindAllDuplicatesInAnArray().FindDuplicates( nums );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public IList<int> FindDuplicatesHashSetTest( int[] nums )
-        => new FindAllDuplicatesInAnArray().FindDuplicatesHashSet( nums );
+    public IList<int> FindDuplicatesHashSetTest( int[] nums ) =>
+        new FindAllDuplicatesInAnArray().FindDuplicatesHashSet( nums );
 
     private static IEnumerable TestCases
     {
