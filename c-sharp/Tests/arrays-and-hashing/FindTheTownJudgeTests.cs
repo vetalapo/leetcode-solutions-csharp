@@ -7,7 +7,8 @@ using Problems;
 public class FindTheTownJudgeTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int FindJudgeTest( int n, int[][] trust ) => new FindTheTownJudge().FindJudge( n, trust );
+    public int FindJudgeTest( int n, int[][] trust ) =>
+        new FindTheTownJudge().FindJudge( n, trust );
 
     private static IEnumerable TestCases
     {
