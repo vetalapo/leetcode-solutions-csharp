@@ -7,12 +7,12 @@ using Problems;
 public class FirstMissingPositiveSolutionTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int FirstMissingPositiveTest( int[] nums )
-        => new FirstMissingPositiveSolution().FirstMissingPositive( nums );
+    public int FirstMissingPositiveTest( int[] nums ) =>
+        new FirstMissingPositiveSolution().FirstMissingPositive( nums );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int FirstMissingPositiveHashSetTest( int[] nums )
-        => new FirstMissingPositiveSolution().FirstMissingPositiveHashSet( nums );
+    public int FirstMissingPositiveHashSetTest( int[] nums ) =>
+        new FirstMissingPositiveSolution().FirstMissingPositiveHashSet( nums );
 
     private static IEnumerable TestCases
     {
