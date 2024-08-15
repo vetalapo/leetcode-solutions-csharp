@@ -7,8 +7,8 @@ using Problems;
 public class MaximalRectangleSolutionTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int MaximalRectangleTest( char[][] matrix )
-        => new MaximalRectangleSolution().MaximalRectangle( matrix );
+    public int MaximalRectangleTest( char[][] matrix ) =>
+        new MaximalRectangleSolution().MaximalRectangle( matrix );
 
     private static IEnumerable TestCases
     {
