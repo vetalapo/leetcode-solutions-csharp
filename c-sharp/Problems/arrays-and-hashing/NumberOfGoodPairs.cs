@@ -24,8 +24,7 @@
  *   • 1 <= nums[i] <= 100
  **
  * https://leetcode.com/problems/number-of-good-pairs/
- **
-**/
+***/
 
 using System.Collections.Generic;
 
