@@ -7,10 +7,12 @@ using Problems;
 public class ProductOfArrayExceptSelfTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int[] ProductExceptSelfTest( int[] nums ) => new ProductOfArrayExceptSelf().ProductExceptSelf( nums );
+    public int[] ProductExceptSelfTest( int[] nums ) =>
+        new ProductOfArrayExceptSelf().ProductExceptSelf( nums );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int[] ProductExceptSelfCombinationTest( int[] nums ) => new ProductOfArrayExceptSelf().ProductExceptSelfCombination( nums );
+    public int[] ProductExceptSelfCombinationTest( int[] nums ) =>
+        new ProductOfArrayExceptSelf().ProductExceptSelfCombination( nums );
 
     private static IEnumerable TestCases
     {
