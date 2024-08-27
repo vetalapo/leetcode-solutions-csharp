@@ -7,10 +7,12 @@ using Problems;
 public class ToLowerCaseSolutionTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public string ToLowerCaseTest( string s ) => new ToLowerCaseSolution().ToLowerCase( s );
+    public string ToLowerCaseTest( string s ) =>
+        new ToLowerCaseSolution().ToLowerCase( s );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public string ToLowerCaseSBTest( string s ) => new ToLowerCaseSolution().ToLowerCaseSB( s );
+    public string ToLowerCaseSBTest( string s ) =>
+        new ToLowerCaseSolution().ToLowerCaseSB( s );
 
     private static IEnumerable TestCases
     {
