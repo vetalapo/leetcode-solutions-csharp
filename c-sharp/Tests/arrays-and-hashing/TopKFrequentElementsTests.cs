@@ -7,10 +7,12 @@ using Problems;
 public class TopKFrequentElementsTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int[] TopKFrequentTest( int[] nums, int k ) => new TopKFrequentElements().TopKFrequent( nums, k );
+    public int[] TopKFrequentTest( int[] nums, int k ) =>
+        new TopKFrequentElements().TopKFrequent( nums, k );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int[] TopKFrequentBucketSortTest( int[] nums, int k ) => new TopKFrequentElements().TopKFrequentBucketSort( nums, k );
+    public int[] TopKFrequentBucketSortTest( int[] nums, int k ) =>
+        new TopKFrequentElements().TopKFrequentBucketSort( nums, k );
 
     private static IEnumerable TestCases
     {
