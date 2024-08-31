@@ -7,10 +7,12 @@ using Problems;
 public class ValidAnagramTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public bool IsAnagramTest( string s, string t ) => new ValidAnagram().IsAnagram( s, t );
+    public bool IsAnagramTest( string s, string t ) =>
+        new ValidAnagram().IsAnagram( s, t );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public bool IsAnagramBySortingTest( string s, string t ) => new ValidAnagram().IsAnagramBySorting( s, t );
+    public bool IsAnagramBySortingTest( string s, string t ) =>
+        new ValidAnagram().IsAnagramBySorting( s, t );
 
     private static IEnumerable TestCases
     {
