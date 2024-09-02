@@ -7,13 +7,14 @@ using Problems;
 public class ValidSudokuTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public bool IsValidSudokuTest( char[][] board ) => new ValidSudoku().IsValidSudoku( board );
+    public bool IsValidSudokuTest( char[][] board ) =>
+        new ValidSudoku().IsValidSudoku( board );
 
     private static IEnumerable TestCases
     {
         get
         {
-            yield return new TestCaseData( new object[] { new char[][]
+            yield return new TestCaseData( [ new char[][]
             {
                 ['5','3','.','.','7','.','.','.','.'],
                 ['6','.','.','1','9','5','.','.','.'],
@@ -24,9 +25,9 @@ public class ValidSudokuTests
                 ['.','6','.','.','.','.','2','8','.'],
                 ['.','.','.','4','1','9','.','.','5'],
                 ['.','.','.','.','8','.','.','7','9']
-            }} ).Returns( true );
+            }] ).Returns( true );
 
-            yield return new TestCaseData( new object[] { new char[][]
+            yield return new TestCaseData( [ new char[][]
             {
                 ['8','3','.','.','7','.','.','.','.'],
                 ['6','.','.','1','9','5','.','.','.'],
@@ -37,9 +38,9 @@ public class ValidSudokuTests
                 ['.','6','.','.','.','.','2','8','.'],
                 ['.','.','.','4','1','9','.','.','5'],
                 ['.','.','.','.','8','.','.','7','9']
-            }} ).Returns( false );
+            }] ).Returns( false );
 
-            yield return new TestCaseData( new object[] { new char[][]
+            yield return new TestCaseData( [ new char[][]
             {
                 ['5','3','.','.','7','.','.','.','.'],
                 ['6','.','3','1','9','5','.','.','.'],
@@ -50,9 +51,9 @@ public class ValidSudokuTests
                 ['.','6','.','.','.','.','2','8','.'],
                 ['.','.','.','4','1','9','.','.','5'],
                 ['.','.','.','.','8','.','.','7','9']
-            }} ).Returns( false );
+            }] ).Returns( false );
 
-            yield return new TestCaseData( new object[] { new char[][]
+            yield return new TestCaseData( [ new char[][]
             {
                 ['5','3','.','.','7','.','.','.','.'],
                 ['6','.','.','1','9','5','.','.','.'],
@@ -63,7 +64,7 @@ public class ValidSudokuTests
                 ['.','6','.','.','.','.','2','8','.'],
                 ['.','.','.','4','1','9','.','.','5'],
                 ['.','.','.','.','8','.','5','7','9']
-            }} ).Returns( false );
+            }] ).Returns( false );
         }
     }
 }
