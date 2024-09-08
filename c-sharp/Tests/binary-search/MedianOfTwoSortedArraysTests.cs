@@ -12,5 +12,6 @@ public class MedianOfTwoSortedArraysTests
     [TestCase( new int[] { 1, 1, 2, 3, 5, 8, 13, 21 }, new int[] { 2, 3, 5, 7, 11, 13, 17, 19 }, ExpectedResult = 6 )]
     [TestCase( new int[] { }, new int[] { 1 }, ExpectedResult = 1 )]
     [TestCase( new int[] { }, new int[] { 2, 3 }, ExpectedResult = 2.5 )]
-    public double FindMedianSortedArraysTest( int[] nums1, int[] nums2 ) => new MedianOfTwoSortedArrays().FindMedianSortedArrays( nums1, nums2 );
+    public double FindMedianSortedArraysTest( int[] nums1, int[] nums2 ) =>
+        new MedianOfTwoSortedArrays().FindMedianSortedArrays( nums1, nums2 );
 }
