@@ -11,5 +11,6 @@ public class SearchInRotatedSortedArrayTests
     [TestCase( new int[] { 4, 5, 6, 0, 1, 2, 3 }, 5, ExpectedResult = 1 )]
     [TestCase( new int[] { 1 }, 0, ExpectedResult = -1 )]
     [TestCase( new int[] { 5, 1, 2, 3, 4 }, 1, ExpectedResult = 1 )]
-    public int SearchTest( int[] nums, int target ) => new SearchInRotatedSortedArray().Search( nums, target );
+    public int SearchTest( int[] nums, int target ) =>
+        new SearchInRotatedSortedArray().Search( nums, target );
 }
