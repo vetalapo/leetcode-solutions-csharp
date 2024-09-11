@@ -7,7 +7,8 @@ using Problems;
 public class BitwiseANDofNumbersRangeTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int RangeBitwiseAndTest( int left, int right ) => new BitwiseANDofNumbersRange().RangeBitwiseAnd( left, right );
+    public int RangeBitwiseAndTest( int left, int right ) =>
+        new BitwiseANDofNumbersRange().RangeBitwiseAnd( left, right );
 
     private static IEnumerable TestCases
     {
