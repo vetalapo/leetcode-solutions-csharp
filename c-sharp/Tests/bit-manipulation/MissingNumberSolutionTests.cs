@@ -7,13 +7,16 @@ using Problems;
 public class MissingNumberSolutionTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int MissingNumberTest( int[] nums ) => new MissingNumberSolution().MissingNumber( nums );
+    public int MissingNumberTest( int[] nums ) =>
+        new MissingNumberSolution().MissingNumber( nums );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int MissingNumberSubtractionTest( int[] nums ) => new MissingNumberSolution().MissingNumberSubtraction( nums );
+    public int MissingNumberSubtractionTest( int[] nums ) =>
+        new MissingNumberSolution().MissingNumberSubtraction( nums );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int MissingNumberMathTest( int[] nums ) => new MissingNumberSolution().MissingNumberMath( nums );
+    public int MissingNumberMathTest( int[] nums ) =>
+        new MissingNumberSolution().MissingNumberMath( nums );
 
     private static IEnumerable TestCases
     {
