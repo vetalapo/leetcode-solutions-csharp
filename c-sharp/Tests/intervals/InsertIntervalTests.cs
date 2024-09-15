@@ -7,8 +7,8 @@ using Problems;
 public class InsertIntervalTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int[][] InsertTest( int[][] intervals, int[] newInterval )
-        => new InsertInterval().Insert( intervals, newInterval );
+    public int[][] InsertTest( int[][] intervals, int[] newInterval ) =>
+        new InsertInterval().Insert( intervals, newInterval );
 
     private static IEnumerable TestCases
     {
