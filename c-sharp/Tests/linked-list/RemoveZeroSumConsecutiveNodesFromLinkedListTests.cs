@@ -7,8 +7,8 @@ using Problems;
 public class RemoveZeroSumConsecutiveNodesFromLinkedListTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public ListNode RemoveZeroSumSublistsTest( ListNode head )
-        => new RemoveZeroSumConsecutiveNodesFromLinkedList().RemoveZeroSumSublists( head );
+    public ListNode RemoveZeroSumSublistsTest( ListNode head ) =>
+        new RemoveZeroSumConsecutiveNodesFromLinkedList().RemoveZeroSumSublists( head );
 
     private static IEnumerable TestCases
     {
