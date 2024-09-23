@@ -10,5 +10,6 @@ public class AddDigitsSolutionTests
     [TestCase( 942, ExpectedResult = 6 )]
     [TestCase( 132189, ExpectedResult = 6 )]
     [TestCase( 493193, ExpectedResult = 2 )]
-    public int AddDigitsTest( int num ) => new AddDigitsSolution().AddDigits( num );
+    public int AddDigitsTest( int num ) =>
+        new AddDigitsSolution().AddDigits( num );
 }
