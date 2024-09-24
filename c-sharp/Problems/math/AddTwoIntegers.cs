@@ -32,7 +32,7 @@ public class AddTwoIntegers
 
     public int SumBitManipulation( int num1, int num2 )
     {
-        // Itirate till there is no carry
+        // Iterate till there is no carry
         while( num2 != 0 )
         {
             // Carry now contains common set bits of num1 and num2
