@@ -28,7 +28,6 @@
  * https://leetcode.com/problems/convert-the-temperature/
 ***/
 
-
 namespace Problems;
 
 public class ConvertTheTemperature
