@@ -35,7 +35,7 @@ public class FizzBuzzSolution
 {
     public IList<string> FizzBuzz( int n )
     {
-        List<string> result = new();
+        List<string> result = [];
 
         for ( int i = 1; i <= n; i++ )
         {
@@ -62,7 +62,7 @@ public class FizzBuzzSolution
 
     public IList<string> FizzBuzzBooleans( int n )
     {
-        List<string> result = new();
+        List<string> result = [];
 
         for ( int i = 1; i <= n; i++ )
         {
