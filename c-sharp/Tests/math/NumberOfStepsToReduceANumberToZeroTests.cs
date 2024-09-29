@@ -7,10 +7,12 @@ using Problems;
 public class NumberOfStepsToReduceANumberToZeroTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int NumberOfStepsTest( int num ) => new NumberOfStepsToReduceANumberToZero().NumberOfSteps( num );
+    public int NumberOfStepsTest( int num ) =>
+        new NumberOfStepsToReduceANumberToZero().NumberOfSteps( num );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int NumberOfStepsBitwiseTest( int num ) => new NumberOfStepsToReduceANumberToZero().NumberOfStepsBitwise( num );
+    public int NumberOfStepsBitwiseTest( int num ) =>
+        new NumberOfStepsToReduceANumberToZero().NumberOfStepsBitwise( num );
 
     private static IEnumerable TestCases
     {
