@@ -126,5 +126,6 @@ public class LongestRepeatingCharacterReplacementTests
           "DQSUFCZPZFTJAMKPKFYHHSQJGKIEGINKJLDRQXCRNRXNISLXAVNWRKOVBUNNYQRVBGKCISIIRULWMXEUWXRRJ" +
           "NMZAZJYEIKLUVGNXRKNRKTBJRCLAKXPOCMUEBUYDNLMFHEUHBADMIWYFCEXCFTLYJRXPLWYSHIOLPFKHBWJXI" +
           "ZTMBHFOBZBYSFESVTSBERKIJISNFKYNBLDYTFLSHGVKYJSOWOTVNCXV", 7520, ExpectedResult = 7864 )]
-    public int CharacterReplacementTest( string s, int k ) => new LongestRepeatingCharacterReplacement().CharacterReplacement( s, k );
+    public int CharacterReplacementTest( string s, int k ) =>
+        new LongestRepeatingCharacterReplacement().CharacterReplacement( s, k );
 }
