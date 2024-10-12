@@ -7,19 +7,25 @@ using Problems;
 public class LongestSubstringWithoutRepeatingCharactersTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public int LengthOfLongestSubstringTest( string s ) => new LongestSubstringWithoutRepeatingCharacters().LengthOfLongestSubstring( s );
+    public int LengthOfLongestSubstringTest( string s ) =>
+        new LongestSubstringWithoutRepeatingCharacters().LengthOfLongestSubstring( s );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public int LengthOfLongestSubstringPointersTest( string s ) => new LongestSubstringWithoutRepeatingCharacters().LengthOfLongestSubstringPointers( s );
+    public int LengthOfLongestSubstringPointersTest( string s ) =>
+        new LongestSubstringWithoutRepeatingCharacters().LengthOfLongestSubstringPointers( s );
 
     private static IEnumerable TestCases
     {
         get
         {
             yield return new TestCaseData( "abcabcbb" ).Returns( 3 );
+            
             yield return new TestCaseData( "bbbbb" ).Returns( 1 );
+            
             yield return new TestCaseData( "pwwkew" ).Returns( 3 );
+            
             yield return new TestCaseData( "aab" ).Returns( 2 );
+            
             yield return new TestCaseData(
                 "a80tkzfhpx24i67vn4vr6wxj73hgzt0vqtzn7ynhiakckzeidn4yaghfpv6c5ei7atdb6xbcm4pgedujihzy0hb5uqyx9nk9qrgg35g90mg" +
                 "3k96aum94v06zffkw6b0w56xfkfjz00yetgnd9ffqnvkm38wt8y2a932wmu5uin8jfy4h6w3qf06gjtgqy7dwwa5mbbtcwkgbxm6fuhnr0p" +
