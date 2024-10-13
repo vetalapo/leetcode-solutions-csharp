@@ -7,22 +7,31 @@ using Problems;
 public class MinimumWindowSubstringTests
 {
     [TestCaseSource( nameof( TestCases ) )]
-    public string MinWindowTest( string s, string t ) => new MinimumWindowSubstring().MinWindow( s, t );
+    public string MinWindowTest( string s, string t ) =>
+        new MinimumWindowSubstring().MinWindow( s, t );
 
     [TestCaseSource( nameof( TestCases ) )]
-    public string MinWindowAltTest( string s, string t ) => new MinimumWindowSubstring().MinWindowAlt( s, t );
+    public string MinWindowAltTest( string s, string t ) =>
+        new MinimumWindowSubstring().MinWindowAlt( s, t );
 
     private static IEnumerable TestCases
     {
         get
         {
             yield return new TestCaseData( "ADOBECODEBANC", "ABC" ).Returns( "BANC" );
+            
             yield return new TestCaseData( "a", "a" ).Returns( "a" );
+            
             yield return new TestCaseData( "a", "aa" ).Returns( string.Empty );
+            
             yield return new TestCaseData( "ab", "b" ).Returns( "b" );
+            
             yield return new TestCaseData( "a", "b" ).Returns( string.Empty );
+            
             yield return new TestCaseData( "ab", "A" ).Returns( string.Empty );
+            
             yield return new TestCaseData( "aaaaaaaaaaaabbbbbcdd", "abcdd" ).Returns( "abbbbbcdd" );
+            
             yield return new TestCaseData( "baaaabab", "abb" ).Returns( "bab" );
             
             yield return new TestCaseData(
@@ -75,7 +84,6 @@ public class MinimumWindowSubstringTests
                 "yeecuzabjeqhxpmfodsvisnpxrqowdawheydfyhoexvcmihdlzavtqlshdhdgjzpozvvackebhgqppvc" +
                 "rvymljfvooauxcjnbejdivikcoaugxwzsulgfqdtefpehbrlhaoqxwcancuvbqutnfbuygoemditeagm" +
                 "cveatgaikwflozgdhkyfqmjcruyyuemwbqwxyyfiwnvlmbovlmccaoguieu",
-
                 "cjgamyzjwxrgwedhsexosmswogckohesskteksqgrjonnrwhywxqkqmywqjlxnfrayykqotkzhxmbwvz" +
                 "strcjfchvluvbaobymlrcgbbqaprwlsqglsrqvynitklvzmvlamqipryqjpmwhdcsxtkutyfoiqljfhx" +
                 "ftnnjgmbpdplnuphuksoestuckgopnlwiyltezuwdmhsgzzajtrpnkkswsglhrjprxlvwftbtdtacvcl" +
@@ -85,7 +93,6 @@ public class MinimumWindowSubstringTests
                 "dkwwpksjgzqvoplbzzjuqqgetlojnblslhpatjlzkbuathcuilqzdwfyhwkwxvpicgkxrxweaqevziri" +
                 "whjzdqanmkljfatjifgaccefukavvsfrbqshhswtchfjkausgaukeapanswimbznstubmswqadckewem" +
                 "zbwdbogogcysfxhzreafwxxwczigwpuvqtathgkpkijqiqrzwugtr" )
-
                 .Returns( 
                 "twxpxwljvoxkpjjpfvccyikbbrpdsyvlxscuoofkecwtnfkvcnzbxkeabtdusyhrqklhaqreupakxkfz" +
                 "xgawqfwsaboszvlshwzhosojjotgyagygguzntrouhiweuomqptfjjqsxlbylhwtpssdlltgubczxslq" +
