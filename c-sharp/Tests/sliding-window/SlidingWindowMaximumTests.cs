@@ -125,5 +125,6 @@ public class SlidingWindowMaximumTests
             9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830,
             9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9830, 9740, 9740, 9740, 9740
         } )]
-    public int[] MaxSlidingWindowTest( int[] nums, int k ) => new SlidingWindowMaximum().MaxSlidingWindow( nums, k );
+    public int[] MaxSlidingWindowTest( int[] nums, int k ) =>
+        new SlidingWindowMaximum().MaxSlidingWindow( nums, k );
 }
