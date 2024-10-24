@@ -7,6 +7,6 @@ public class MakeTheStringGreatTests
     [TestCase( "leEeetcode", ExpectedResult = "leetcode" )]
     [TestCase( "abBAcC", ExpectedResult = "" )]
     [TestCase( "s", ExpectedResult = "s" )]
-    public string MakeGoodTest( string s )
-        => new MakeTheStringGreat().MakeGood( s );
+    public string MakeGoodTest( string s ) =>
+        new MakeTheStringGreat().MakeGood( s );
 }
