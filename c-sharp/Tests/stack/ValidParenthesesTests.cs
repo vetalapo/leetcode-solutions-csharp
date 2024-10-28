@@ -11,5 +11,6 @@ public class ValidParenthesesTests
     [TestCase( "{[]}", ExpectedResult = true )]
     [TestCase( "[", ExpectedResult = false )]
     [TestCase( "]", ExpectedResult = false )]
-    public bool IsValidTest( string s ) => new ValidParentheses().IsValid( s );
+    public bool IsValidTest( string s ) =>
+        new ValidParentheses().IsValid( s );
 }
