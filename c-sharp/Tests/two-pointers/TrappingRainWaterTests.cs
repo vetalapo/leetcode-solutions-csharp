@@ -10,5 +10,6 @@ public class TrappingRainWaterTests
     [TestCase( new int[] { 5, 5, 1, 7, 1, 1, 5, 2, 7, 6 }, ExpectedResult = 23 )]
     [TestCase( new int[] { 4, 4, 4, 7, 1, 0 }, ExpectedResult = 0 )]
     [TestCase( new int[] { 0, 7, 1, 4, 6 }, ExpectedResult = 7 )]
-    public int TrapTest( int[] height ) => new TrappingRainWater().Trap( height );
+    public int TrapTest( int[] height ) =>
+        new TrappingRainWater().Trap( height );
 }
