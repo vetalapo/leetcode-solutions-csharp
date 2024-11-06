@@ -8,5 +8,6 @@ public class ValidPalindromeTests
     [TestCase( "race a car", ExpectedResult = false )]
     [TestCase( " ", ExpectedResult = true )]
     [TestCase( "0P", ExpectedResult = false )]
-    public bool IsPalindromeTest( string s ) => new ValidPalindrome().IsPalindrome( s );
+    public bool IsPalindromeTest( string s ) =>
+        new ValidPalindrome().IsPalindrome( s );
 }
