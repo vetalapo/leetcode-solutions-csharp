@@ -24,7 +24,9 @@ public class ConcatenationOfArrayTests
         get
         {
             yield return new TestCaseData( new int[] { 1, 2, 1 } ).Returns( new int[] { 1, 2, 1, 1, 2, 1 } );
+
             yield return new TestCaseData( new int[] { 1, 3, 2, 1 } ).Returns( new int[] { 1, 3, 2, 1, 1, 3, 2, 1 } );
+
             yield return new TestCaseData( Array.Empty<int>() ).Returns( Array.Empty<int>() );
         }
     }
