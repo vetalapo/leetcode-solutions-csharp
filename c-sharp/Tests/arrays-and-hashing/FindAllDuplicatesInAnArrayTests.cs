@@ -20,7 +20,9 @@ public class FindAllDuplicatesInAnArrayTests
         get
         {
             yield return new TestCaseData( [new int[] { 4, 3, 2, 7, 8, 2, 3, 1 }] ).Returns( new List<int> { 2, 3 } );
+
             yield return new TestCaseData( [new int[] { 1, 1, 2 }] ).Returns( new List<int> { 1 } );
+
             yield return new TestCaseData( [new int[] { 1 }] ).Returns( new List<int> { } );
         }
     }
