@@ -15,7 +15,9 @@ public class FindTheTownJudgeTests
         get
         {
             yield return new TestCaseData( 2, new int[][] { [1, 2] } ).Returns( 2 );
+            
             yield return new TestCaseData( 3, new int[][] { [1, 3], [2, 3] } ).Returns( 3 );
+            
             yield return new TestCaseData( 3, new int[][] { [1, 3], [2, 3], [3, 1] } ).Returns( -1 );
         }
     }
