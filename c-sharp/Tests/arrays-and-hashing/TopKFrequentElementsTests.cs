@@ -19,7 +19,9 @@ public class TopKFrequentElementsTests
         get
         {
             yield return new TestCaseData( new int[] { 1, 1, 1, 2, 2, 3 }, 2 ).Returns( new int[] { 1, 2 } );
+            
             yield return new TestCaseData( new int[] { 1 }, 1 ).Returns( new int[] { 1 } );
+            
             yield return new TestCaseData( _testNums, 5 ).Returns( new int[] { 654, 12, 1, 5, 3 } );
         }
     }
