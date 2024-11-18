@@ -19,6 +19,7 @@ public class ValidAnagramTests
         get
         {
             yield return new TestCaseData( "anagram", "nagaram" ).Returns( true );
+            
             yield return new TestCaseData( "rat", "car" ).Returns( false );
         }
     }
