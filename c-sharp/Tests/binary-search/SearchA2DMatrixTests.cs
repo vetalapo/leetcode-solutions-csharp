@@ -31,7 +31,9 @@ public class SearchA2DMatrixTests
                 }, 13 ).Returns( false );
 
             yield return new TestCaseData( new[] { new[] { 1 } }, 1 ).Returns( true );
+            
             yield return new TestCaseData( new[] { new[] { 1 } }, 0 ).Returns( false );
+            
             yield return new TestCaseData( new[] { [1], new int[] { 3 } }, 2 ).Returns( false );
         }
     }
