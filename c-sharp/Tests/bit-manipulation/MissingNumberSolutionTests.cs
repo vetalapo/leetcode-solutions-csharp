@@ -23,7 +23,9 @@ public class MissingNumberSolutionTests
         get
         {
             yield return new TestCaseData( new int[] { 3, 0, 1 } ).Returns( 2 );
+            
             yield return new TestCaseData( new int[] { 0, 1 } ).Returns( 2 );
+            
             yield return new TestCaseData( new int[] { 9, 6, 4, 2, 3, 5, 7, 0, 1 } ).Returns( 8 );
         }
     }
