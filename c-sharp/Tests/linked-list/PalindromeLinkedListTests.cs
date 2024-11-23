@@ -15,6 +15,7 @@ public class PalindromeLinkedListTests
         get
         {
             yield return new TestCaseData( ListNode.Create( [1, 2, 2, 1] ) ).Returns( true );
+
             yield return new TestCaseData( ListNode.Create( [1, 2] ) ).Returns( false );
         }
     }
