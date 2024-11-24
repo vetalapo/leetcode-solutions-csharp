@@ -19,6 +19,7 @@ public class AddTwoIntegersTests
         get
         {
             yield return new TestCaseData( 12, 5 ).Returns( 17 );
+            
             yield return new TestCaseData( -10, 4 ).Returns( -6 );
         }
     }
