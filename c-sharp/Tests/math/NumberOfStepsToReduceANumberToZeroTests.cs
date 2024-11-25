@@ -19,8 +19,11 @@ public class NumberOfStepsToReduceANumberToZeroTests
         get
         {
             yield return new TestCaseData( 14 ).Returns( 6 );
+
             yield return new TestCaseData( 8 ).Returns( 4 );
+
             yield return new TestCaseData( 123 ).Returns( 12 );
+
             yield return new TestCaseData( 5000000 ).Returns( 30 );
         }
     }
