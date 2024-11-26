@@ -58,7 +58,7 @@ public class BuildArrayFromPermutation
         for ( int i = 0; i < nums.Length; i++ )
         {
             // while integer division gives the result values
-            nums[i] = nums[i] / nums.Length;
+            nums[i] /= nums.Length;
         }
 
         return nums;
