@@ -55,7 +55,7 @@ public class ConcatenationOfArray
 
     public int[] GetConcatenationSL( int[] nums )
     {
-        return nums.Concat( nums ).ToArray();
+        return [.. nums, .. nums];
     }
 
     public int[] GetConcatenationSpan( int[] nums )
