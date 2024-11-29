@@ -60,18 +60,18 @@ public class CountElementsWithMaximumFrequency
 
         int maxFrequency = 0;
 
-        foreach ( (int num, int freq) in countMap )
+        foreach ( (int num, int frequency) in countMap )
         {
-            maxFrequency = Math.Max( maxFrequency, freq );
+            maxFrequency = Math.Max( maxFrequency, frequency );
         }
 
         int result = 0;
 
-        foreach ( (int num, int freq) in countMap )
+        foreach ( (int num, int frequency) in countMap )
         {
-            if ( freq == maxFrequency )
+            if ( frequency == maxFrequency )
             {
-                result += freq;
+                result += frequency;
             }
         }
 
