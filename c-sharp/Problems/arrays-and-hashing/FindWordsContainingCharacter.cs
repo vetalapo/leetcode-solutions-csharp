@@ -41,7 +41,7 @@ public class FindWordsContainingCharacter
 {
     public IList<int> FindWordsContaining( string[] words, char x )
     {
-        List<int> resultIndices = new();
+        List<int> resultIndices = [];
 
         for ( int i = 0; i < words.Length; i++ )
         {
