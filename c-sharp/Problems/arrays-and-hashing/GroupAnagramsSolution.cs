@@ -30,7 +30,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Problems;
 
@@ -50,11 +49,11 @@ public class GroupAnagramsSolution
             }
             else
             {
-                groups[hash] = new List<string>() { str };
+                groups[hash] = [str];
             }
         }
 
-        return groups.Values.ToList();
+        return [.. groups.Values];
     }
 
     private static string GetAnagramHash( string str )
