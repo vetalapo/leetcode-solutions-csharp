@@ -41,6 +41,7 @@ public class LongestCommonPrefixSolution
                 {
                     keepLooping = false;
                     right--;
+
                     break;
                 }
             }
