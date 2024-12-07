@@ -28,10 +28,11 @@
  *     There are 0 employees who met the target.
  *
  * Constraints:
- *   - 1 <= n == hours.length <= 50
- *   - 0 <= hours[i], target <= 10^5
+ *   • 1 <= n == hours.length <= 50
+ *   • 0 <= hours[i], target <= 10^5
  *
- * Hint 1: Iterate over the elements of array hours and check if the value is greater than or equal to target.
+ * Hint 1:
+ *   Iterate over the elements of array hours and check if the value is greater than or equal to target.
  **
  * https://leetcode.com/problems/number-of-employees-who-met-the-target/
 ***/
