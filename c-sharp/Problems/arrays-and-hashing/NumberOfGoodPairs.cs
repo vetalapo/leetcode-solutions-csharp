@@ -34,18 +34,14 @@ public class NumberOfGoodPairs
 {
     public int NumIdenticalPairs( int[] nums )
     {
-        Dictionary<int, int> countMap = new();
+        Dictionary<int, int> countMap = [];
         int sum = 0;
 
         foreach ( int num in nums )
         {
-            if ( countMap.ContainsKey( num ) )
+            if ( !countMap.TryAdd( num, 1 ) )
             {
                 sum += countMap[num]++;
-            }
-            else
-            {
-                countMap.Add( num, 1 );
             }
         }
 
