@@ -35,21 +35,18 @@ public class RansomNote
 {
     public bool CanConstruct( string ransomNote, string magazine )
     {
-        Dictionary<char, ulong> magazineMap = new();
+        Dictionary<char, ulong> magazineMap = [];
 
         foreach ( char c in magazine )
         {
-            if ( !magazineMap.ContainsKey( c ) )
-            {
-                magazineMap[c] = 0;
-            }
+            magazineMap.TryAdd( c, 0 );
 
             magazineMap[c]++;
         }
 
         foreach ( char c in ransomNote )
         {
-            if ( !magazineMap.ContainsKey( c ) || magazineMap[c] <= 0 )
+            if ( !magazineMap.TryGetValue( c, out ulong value ) || value <= 0 )
             {
                 return false;
             }
