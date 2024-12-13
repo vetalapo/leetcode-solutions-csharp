@@ -62,7 +62,7 @@ public class SplitStringsBySeparator
 {
     public IList<string> SplitWordsBySeparator( IList<string> words, char separator )
     {
-        List<string> result = new();
+        List<string> result = [];
 
         foreach ( string word in words )
         {
