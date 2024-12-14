@@ -58,7 +58,10 @@ public class TwoSumSolution
 {
     public int[] TwoSum( int[] nums, int target )
     {
-        Dictionary<int, int> indices = new() { { nums[0], 0 } };
+        Dictionary<int, int> indices = new()
+        {
+            { nums[0], 0 }
+        };
 
         for ( int i = 1; i < nums.Length; i++ )
         {
