@@ -69,6 +69,7 @@ public class MedianOfTwoSortedArrays
 
             double aLeft = aMiddleIndex >= 0 ? nums1[aMiddleIndex] : double.NegativeInfinity;
             double aRight = aMiddleIndex + 1 < nums1.Length ? nums1[aMiddleIndex + 1] : double.PositiveInfinity;
+
             double bLeft = bPartitionSize >= 0 ? nums2[bPartitionSize] : double.NegativeInfinity;
             double bRight = bPartitionSize + 1 < nums2.Length ? nums2[bPartitionSize + 1] : double.PositiveInfinity;
 
