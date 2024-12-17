@@ -41,7 +41,8 @@ public class SearchA2DMatrix
             int left = 0;
             int right = matrix[verticalMidPoint].Length - 1;
 
-            if ( matrix[verticalMidPoint][left] == target || matrix[verticalMidPoint][right] == target )
+            if ( matrix[verticalMidPoint][left] == target ||
+                 matrix[verticalMidPoint][right] == target )
             {
                 return true;
             }
@@ -49,12 +50,14 @@ public class SearchA2DMatrix
             if ( matrix[verticalMidPoint][left] > target )
             {
                 bottom = verticalMidPoint - 1;
+
                 continue;
             }
 
             if ( matrix[verticalMidPoint][right] < target )
             {
                 top = verticalMidPoint + 1;
+
                 continue;
             }
 
