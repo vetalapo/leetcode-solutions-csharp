@@ -86,7 +86,7 @@ public class TakeGiftsFromTheRichestPile
         return sum;
     }
 
-    // This approach works faster on LT
+    // On small sets Brute-Force runs faster
     public long PickGiftsBF( int[] gifts, int k )
     {
         while ( k > 0 )
