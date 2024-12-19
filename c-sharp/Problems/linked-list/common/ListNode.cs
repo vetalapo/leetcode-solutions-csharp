@@ -35,8 +35,8 @@ public class ListNode( int val = 0, ListNode next = null )
     public override bool Equals( object? obj )
     {
         return obj is ListNode node &&
-                 val == node.val &&
-                EqualityComparer<ListNode>.Default.Equals( next, node.next );
+                      val == node.val &&
+                      EqualityComparer<ListNode>.Default.Equals( next, node.next );
     }
 
     public override string ToString()
