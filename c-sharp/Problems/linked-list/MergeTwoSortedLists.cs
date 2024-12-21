@@ -77,7 +77,7 @@ public class MergeTwoSortedLists
             (list1, list2) = (list2, list1);
         }
 
-        List<int> nodesValues = new();
+        List<int> nodesValues = [];
 
         while ( list1 is not null || list2 is not null )
         {
