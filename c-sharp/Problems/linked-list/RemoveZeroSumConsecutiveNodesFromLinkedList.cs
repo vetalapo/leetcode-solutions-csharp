@@ -80,7 +80,7 @@ public class RemoveZeroSumConsecutiveNodesFromLinkedList
                 }
 
                 // Make connection from the node before
-                // the zer sum sequence to the node after
+                // the zero sum sequence to the node after
                 prev.next = current.next;
             }
             else
