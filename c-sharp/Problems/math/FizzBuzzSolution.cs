@@ -123,7 +123,7 @@ public class FizzBuzzSolution
 
     public IList<string> FizzBuzzBooleansAndPreallocatedStrings( int n )
     {
-        List<string> result = new();
+        List<string> result = [];
 
         string fizzBuzz = "FizzBuzz";
         string fizz = "Fizz";
@@ -157,7 +157,7 @@ public class FizzBuzzSolution
 
     public IList<string> FizzBuzzStringConcatenation( int n )
     {
-        List<string> result = new();
+        List<string> result = [];
 
         for ( int i = 1; i <= n; i++ )
         {
@@ -189,7 +189,7 @@ public class FizzBuzzSolution
 
     public IList<string> FizzBuzzStringBuilder( int n )
     {
-        List<string> result = new();
+        List<string> result = [];
 
         for ( int i = 1; i <= n; i++ )
         {
