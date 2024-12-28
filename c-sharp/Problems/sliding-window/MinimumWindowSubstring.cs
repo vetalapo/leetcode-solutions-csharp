@@ -60,8 +60,8 @@ public class MinimumWindowSubstring
 {
     public string MinWindow( string s, string t )
     {
-        Dictionary<char, int> tCount = new();
-        Dictionary<char, int> window = new();
+        Dictionary<char, int> tCount = [];
+        Dictionary<char, int> window = [];
 
         for ( int i = 0; i < t.Length; i++ )
         {
@@ -125,8 +125,8 @@ public class MinimumWindowSubstring
 
     public string MinWindowAlt( string s, string t )
     {
-        Dictionary<char, int> sCount = new();
-        Dictionary<char, int> tCount = new();
+        Dictionary<char, int> sCount = [];
+        Dictionary<char, int> tCount = [];
 
         // Counting keys in t
         for ( int i = 0; i < t.Length; i++ )
