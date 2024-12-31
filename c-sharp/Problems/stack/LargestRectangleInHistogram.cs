@@ -59,7 +59,7 @@ public class LargestRectangleInHistogram
     public int LargestRectangleExplicit( int[] heights )
     {
         int maxArea = 0;
-        Stack<(int inx, int val)> stack = new();
+        Stack<(int inx, int val)> stack = [];
 
         for ( int i = 0; i < heights.Length; i++ )
         {
