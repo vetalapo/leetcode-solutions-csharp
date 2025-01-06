@@ -23,7 +23,7 @@
  *   Explanation: Strings "cc", "acd", "ac", and "d" are consistent.
  *
  * Constraints:
- *   • 1 <= words.length <= 104
+ *   • 1 <= words.length <= 10^4
  *   • 1 <= allowed.length <= 26
  *   • 1 <= words[i].length <= 10
  *   • The characters in allowed are distinct.
