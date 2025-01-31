@@ -35,6 +35,9 @@
  * Constraints:
  *   • 1 <= nums.length == n <= 50
  *   • -50 <= nums[i], target <= 50
+ *
+ * Hint 1:
+ *   The constraints are small enough for a brute-force solution to pass
  **
  * https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/
 ***/
